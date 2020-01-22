@@ -1,0 +1,43 @@
+.nav__menu {}
+
+.nav__list {
+    display: flex;
+
+    a:hover {
+        &::after {
+            @include gold-line;
+            width: 36px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.nav__item {
+    list-style: none;
+    margin-top: 18px;
+
+    &:not(:last-child) {
+        margin-right: 33px;
+    }
+}
+
+.nav__link:link,
+.nav__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-dark;
+    display: inline-block;
+    font-weight: 700;
+}
+
+// .nav__link:hover {
+//     margin-top: 0;
+
+//     &::after {
+//         @include gold-line;
+//         width: 36px;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }

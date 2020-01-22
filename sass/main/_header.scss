@@ -1,0 +1,40 @@
+.header__top {
+    background-color: $color-dark;
+    height: 40px;
+    width: 100%;
+
+}
+
+.header__bottom {
+    height: 120px;
+}
+
+.header__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__span {
+    font-size: 12px;
+    color: $color-white;
+    margin-right: 50px;
+}
+
+.header__top--right {
+
+    span {
+        margin-right: 20px;
+    }
+}
+
+.header__link {
+    font-size: 14px;
+    color: $color-white;
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+
+}
