@@ -1,0 +1,42 @@
+.story {
+    background-color: $color-silver;
+    width: 100%;
+    padding-top: 87px;
+}
+.story__content {
+
+}
+
+.story__content--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 55px;
+}
+
+.story__img {
+
+}
+
+.story__heading {
+
+    &::after {
+        @include gold-line;
+        width: 40px;
+        margin-top: 23px;
+    }
+}
+
+.story__subhead {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: $color-gray;
+}
+
+.story__text {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    color: $color-gray;
+    padding: 15px 0;
+}

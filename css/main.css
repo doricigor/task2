@@ -83,6 +83,9 @@ html {
   .btn-gold:hover {
     transform: translateY(-2px); }
 
+.nav__menu {
+  margin-bottom: 0; }
+
 .nav__list {
   display: flex; }
   .nav__list a:hover::after {
@@ -98,9 +101,9 @@ html {
 
 .nav__item {
   list-style: none;
-  margin-top: 18px; }
+  margin-top: 21px; }
   .nav__item:not(:last-child) {
-    margin-right: 33px; }
+    margin-right: 35px; }
 
 .nav__link:link,
 .nav__link:visited {
@@ -125,8 +128,8 @@ html {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 24px;
-  left: 51%;
+  bottom: 20px;
+  left: 50.3%;
   transform: translateX(-59%);
   list-style-type: none; }
   .slick-dots button {
@@ -152,18 +155,18 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-bottom: 35px;
-  padding-left: 22px; }
+  padding-bottom: 37px;
+  padding-left: 13px; }
 
 .banner__wrap {
   width: 50%;
   margin-top: -20px; }
 
 .banner__btn {
-  margin-top: 50px; }
+  margin-top: 55px; }
 
 .banner__heading {
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
   padding-bottom: 10px; }
   .banner__heading::after {
     content: '';
@@ -179,38 +182,91 @@ html {
 .banner__p {
   font-size: 18px;
   font-family: 'Merriweather', serif;
-  margin-top: 25px;
-  letter-spacing: 1px;
+  margin-top: 29px;
+  letter-spacing: 0.9px;
   margin-bottom: -20px; }
 
 .services {
   padding: 100px 0;
   text-align: center; }
 
-.services__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 260px;
+.services__heading::after {
+  content: '';
+  background-color: #af943e;
+  height: 2px;
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 40px;
+  margin: 20px auto; }
+
+.services__text {
+  color: #666666;
+  font-size: 16px;
+  letter-spacing: 1.2px; }
+
+.services__cards {
+  padding: 93px 24px 93px 15px; }
+
+.services__card img {
+  margin-top: 45px;
+  margin-bottom: 30px; }
+
+.services__card--1 {
+  background-image: url(../img/services/services1.jpg);
+  width: 259px;
   height: 200px; }
-  .services__card img {
-    height: 60px;
-    width: 60px; }
-  .services__card--1 {
-    background-image: url(../img/services/services1.jpg);
-    height: 100%; }
-  .services__card--2 {
-    background-image: url(../img/services/services2.jpg);
-    height: 100%; }
-  .services__card--3 {
-    background-image: url(../img/services/services3.jpg);
-    height: 100%; }
-  .services__card--4 {
-    background-image: url(../img/services/services4.jpg);
-    height: 100%; }
+
+.services__card--2 {
+  background-image: url(../img/services/services2.jpg);
+  width: 259px;
+  height: 200px; }
+
+.services__card--3 {
+  background-image: url(../img/services/services3.jpg);
+  width: 259px;
+  height: 200px; }
+
+.services__card--4 {
+  background-image: url(../img/services/services4.jpg);
+  width: 259px;
+  height: 200px; }
 
 .services__span {
   font-size: 18px;
   color: #ffffff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: block; }
+
+.story {
+  background-color: #f3f4f5;
+  width: 100%;
+  padding-top: 87px; }
+
+.story__content--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 55px; }
+
+.story__heading::after {
+  content: '';
+  background-color: #af943e;
+  height: 2px;
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 40px;
+  margin-top: 23px; }
+
+.story__subhead {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: #666666; }
+
+.story__text {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  color: #666666;
+  padding: 15px 0; }
