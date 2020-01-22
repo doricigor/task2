@@ -1,0 +1,31 @@
+.box {
+    padding-top: 39px;
+    margin-top: 171px;
+    background-image: url(../img/box-img.jpg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.box__container {
+    padding-left: 42px;
+    padding-right: 30px;
+}
+.box__right {
+    background-color: $color-black;
+    padding: 61px 132px 92px 45px;
+    margin-bottom: 100px;
+}
+.box__heading {
+    color: $color-white;
+    padding-bottom: 33px;
+    text-transform: capitalize;
+    line-height: 48px;
+    letter-spacing: 2.3px;
+}
+.box__text {
+    font-family: myriad-pro, sans-serif;
+    font-size: 14px;
+    color: $color-white;
+    line-height: 24px;
+}

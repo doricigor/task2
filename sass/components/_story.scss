@@ -16,15 +16,29 @@
 }
 
 .story__img {
+    position: relative;
+    z-index: 5;
 
+    &::after {
+        content: '';
+        width: 445px;
+        height: 100%;
+        border: 1px solid $color-gold;
+        position: absolute;
+        top: 24px;
+        right: 77px;
+        z-index: -1;
+    }
 }
 
 .story__heading {
+    margin-top: 40px;
 
     &::after {
         @include gold-line;
         width: 40px;
-        margin-top: 23px;
+        margin-top: 12px;
+        margin-bottom: 15px;
     }
 }
 
@@ -32,11 +46,14 @@
     font-family: 'Merriweather', serif;
     font-size: 16px;
     color: $color-gray;
+    margin-bottom: 1px;
 }
 
 .story__text {
-    font-family: 'Merriweather', serif;
+    font-family: myriad-pro, sans-serif;
     font-size: 14px;
     color: $color-gray;
     padding: 15px 0;
+    line-height: 24px;
+    margin-bottom: 15px;
 }
