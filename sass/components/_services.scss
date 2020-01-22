@@ -1,0 +1,45 @@
+.services {
+    height: 650px;
+    text-align: center;
+}
+
+.services__heading {}
+
+.services__text {}
+
+.services__cards {}
+
+.services__card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+
+    &--1 {
+        background-image: url(../img/services/services1.jpg);
+    }
+
+    &--2 {
+        background-image: url(../img/services/services2.jpg);
+    }
+
+    &--3 {
+        background-image: url(../img/services/services3.jpg);
+    }
+
+    &--4 {
+        background-image: url(../img/services/services4.jpg);
+    }
+}
+
+.services__span {
+    font-size: 18px;
+    color: $color-white;
+    // display: block;
+    text-transform: uppercase;
+}

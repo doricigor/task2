@@ -1,0 +1,21 @@
+.btn-gold {
+    padding: 15px 38px;
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 14px;
+    background-color: $color-gold;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}

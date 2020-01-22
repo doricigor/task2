@@ -1,0 +1,41 @@
+.banner {
+    position: relative;
+    max-height: 780px;
+}
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    padding-left: 22px;
+}
+
+.banner__wrap {
+    width: 50%;
+}
+
+.banner__heading {
+    letter-spacing: 2.5px;
+    // padding-bottom: 30px;
+
+    &::after {
+        @include gold-line;
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+}
+
+
+
+.banner__p {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
