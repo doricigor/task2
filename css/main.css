@@ -125,7 +125,7 @@ html {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 34px;
+  bottom: 24px;
   left: 51%;
   transform: translateX(-59%);
   list-style-type: none; }
@@ -148,20 +148,23 @@ html {
 
 .banner__content {
   position: absolute;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-bottom: 35px;
   padding-left: 22px; }
 
 .banner__wrap {
-  width: 50%; }
+  width: 50%;
+  margin-top: -20px; }
+
+.banner__btn {
+  margin-top: 50px; }
 
 .banner__heading {
-  letter-spacing: 2.5px; }
+  letter-spacing: 2px;
+  padding-bottom: 10px; }
   .banner__heading::after {
     content: '';
     background-color: #af943e;
@@ -171,34 +174,41 @@ html {
     margin-bottom: 14px;
     width: 50px;
     margin-top: 20px;
-    margin-left: 10px; }
+    margin-left: 5px; }
 
 .banner__p {
   font-size: 18px;
   font-family: 'Merriweather', serif;
-  margin-top: 5px;
-  letter-spacing: 1px; }
+  margin-top: 25px;
+  letter-spacing: 1px;
+  margin-bottom: -20px; }
 
 .services {
-  height: 650px;
+  padding: 100px 0;
   text-align: center; }
 
 .services__card {
-  height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-content: center;
+  width: 260px;
+  height: 200px; }
   .services__card img {
-    height: 50px;
-    width: 50px; }
+    height: 60px;
+    width: 60px; }
   .services__card--1 {
-    background-image: url(../img/services/services1.jpg); }
+    background-image: url(../img/services/services1.jpg);
+    height: 100%; }
   .services__card--2 {
-    background-image: url(../img/services/services2.jpg); }
+    background-image: url(../img/services/services2.jpg);
+    height: 100%; }
   .services__card--3 {
-    background-image: url(../img/services/services3.jpg); }
+    background-image: url(../img/services/services3.jpg);
+    height: 100%; }
   .services__card--4 {
-    background-image: url(../img/services/services4.jpg); }
+    background-image: url(../img/services/services4.jpg);
+    height: 100%; }
 
 .services__span {
   font-size: 18px;
