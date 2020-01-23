@@ -1,0 +1,25 @@
+.gallery {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.gallery__heading {
+    &::after {
+        @include gold-line;
+        margin: 10px auto;
+        width: 40px;
+    }
+}
+
+.gallery__images {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+        margin-bottom: 23px;
+        height: 300px;
+        width: 300px;
+    }
+}

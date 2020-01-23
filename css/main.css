@@ -461,3 +461,108 @@ html {
     display: block;
     width: 40px;
     margin: 23px auto; }
+
+.why {
+  background-image: url(../img/whyus.jpg);
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+  background-color: #af943e; }
+
+.why__container {
+  box-sizing: border-box; }
+
+.why__content {
+  background-color: #af943e;
+  padding: 67px 92px 72px 105px; }
+
+.why__heading {
+  color: #ffffff;
+  text-transform: capitalize; }
+
+.why__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px; }
+
+.tab {
+  margin-left: -10px;
+  margin-top: 18px; }
+
+.why__tabs label {
+  order: 1;
+  opacity: .4;
+  display: block;
+  padding: 10px 53px 10px 53px;
+  background: #af943e;
+  font-weight: bold;
+  transition: all .2s;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; }
+
+.why__tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 10px;
+  background: #af943e;
+  color: #ffffff;
+  text-align: justify;
+  position: relative; }
+
+.why__tabs input[type="radio"] {
+  display: none; }
+
+.why__tabs input[type="radio"]:checked + label {
+  background: #af943e;
+  opacity: 1;
+  border-bottom: 3px solid #ffffff; }
+  .why__tabs input[type="radio"]:checked + label::after {
+    content: '';
+    height: 1px;
+    width: 72.5%;
+    background-color: #ffffff;
+    display: block;
+    margin: 0px -38px;
+    position: absolute;
+    top: 217px;
+    left: 142px; }
+
+.why__tabs input[type="radio"]:checked + label + .tab {
+  display: block; }
+
+@media (max-width: 45em) {
+  .why__tabs .tab,
+  .why__tabs label {
+    order: initial; }
+  .why__tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem; } }
+
+.gallery {
+  text-align: center;
+  margin-top: 64px; }
+
+.gallery__heading::after {
+  content: '';
+  background-color: #af943e;
+  height: 2px;
+  display: block;
+  margin: 10px auto;
+  width: 40px; }
+
+.gallery__images {
+  margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .gallery__images img {
+    margin-bottom: 23px;
+    height: 300px;
+    width: 300px; }
