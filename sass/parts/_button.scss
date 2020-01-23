@@ -19,3 +19,25 @@
         transform: translateY(-2px);
     }
 }
+
+.map__btn {
+    text-transform: uppercase;
+    background-color: $color-white;
+    color: $color-black;
+    border: 2px solid $color-black;
+    padding: 18px 33px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    margin-top: 40px;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-black;
+    }
+}
