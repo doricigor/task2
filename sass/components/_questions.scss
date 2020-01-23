@@ -1,0 +1,64 @@
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+.accordion-toggle:before {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    float: left;
+    margin-left: 80px;
+    color: $color-gold;
+}
+
+.accordion-opened .accordion-toggle:before {
+    content: "\f107";
+}
+
+.accordion-toggle {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: $dark-text;
+    margin-left: 75px;
+
+    &:hover {
+        color: $dark-text;
+        text-decoration: none;
+    }
+}
+
+.accordion-group {
+    padding: 10px 0;
+}
+
+.accordion-body {
+    background-color: $color-silver-2;
+    width: 150%;
+}
+
+.accordion-inner {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: $color-gray;
+    max-width: 67%;
+    padding: 54px 0 54px 168px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.questions {
+    margin-top: 60px;
+}
+
+.questions h2 {
+    text-align: center;
+}
+
+.questions__heading {
+    padding-bottom: 10px;
+    text-transform: none;
+    margin-left: 40px;
+
+    &::after {
+        @include gold-line;
+        width: 40px;
+        margin: 23px auto;
+    }
+}
