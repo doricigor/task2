@@ -9,7 +9,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 37px;
+    padding-bottom: 12px;
     padding-left: 13px;
 }
 
@@ -23,8 +23,9 @@
 }
 
 .banner__heading {
-    letter-spacing: 1.6px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    margin-bottom: 35px;
+
 
     &::after {
         @include gold-line;
@@ -41,5 +42,6 @@
     font-family: 'Merriweather', serif;
     margin-top: 29px;
     letter-spacing: 0.9px;
-    margin-bottom: -20px;
+    margin-bottom: 6px;
+    max-width: 550px;
 }

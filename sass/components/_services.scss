@@ -5,11 +5,12 @@
 
 .services__heading {
 
+
     &::after {
         @include gold-line;
         width: 40px;
         margin: 20px auto;
-        
+
     }
 }
 
@@ -20,7 +21,7 @@
 }
 
 .services__cards {
-    padding: 93px 24px 93px 15px;
+    padding: 93px 24px 34px 15px;
 }
 
 .services__card {
