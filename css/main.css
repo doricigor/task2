@@ -62,11 +62,13 @@ html {
 .header__span {
   font-size: 12px;
   color: #ffffff;
-  margin-right: 36px;
   font-family: 'Poppins', sans-serif; }
 
+.header__top--left span:not(:last-child) {
+  margin-right: 43px; }
+
 .header__top--right span {
-  margin-right: 20px; }
+  margin-right: 12px; }
 
 .header__link:visited,
 .header__link:link {
@@ -75,9 +77,12 @@ html {
   .header__link:visited:hover,
   .header__link:link:hover {
     color: #af943e; }
-  .header__link:visited:not(:last-child),
-  .header__link:link:not(:last-child) {
-    margin-right: 15px; }
+
+.header__link--left:visited, .header__link--left:link {
+  margin-right: 10px; }
+
+.header__link--right:visited:not(:last-child), .header__link--right:link:not(:last-child) {
+  margin-right: 19px; }
 
 footer {
   background-color: #181a1b;
