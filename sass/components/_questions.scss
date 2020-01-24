@@ -9,7 +9,11 @@
 }
 
 .accordion-opened .accordion-toggle:before {
+    font-family: 'FontAwesome';
     content: "\f107";
+    float: left;
+    margin-left: 80px;
+    color: $color-gold;
 }
 
 .accordion-toggle {
@@ -38,10 +42,21 @@
     font-family: 'Poppins', sans-serif;
     color: $color-gray;
     max-width: 67%;
-    padding: 54px 0 54px 168px;
-    margin-top: 50px;
-    margin-bottom: 0;
-    line-height: 24px;
+    padding: 48px 0 48px 168px;
+    margin-top: 52px;
+    margin-bottom: 13px;
+    line-height: 23px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: $color-gold;
+        height: 60px;
+        width: 2px;
+        position: absolute;
+        top: -21px;
+        left: 83px;
+    }
 }
 
 .questions {

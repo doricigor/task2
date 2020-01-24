@@ -30,9 +30,14 @@
     }
 }
 
-.header__link {
+.header__link:visited,
+.header__link:link {
     font-size: 14px;
     color: $color-white;
+
+    &:hover {
+        color: $color-gold;
+    }
 
     &:not(:last-child) {
         margin-right: 15px;

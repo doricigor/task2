@@ -68,11 +68,98 @@ html {
 .header__top--right span {
   margin-right: 20px; }
 
-.header__link {
+.header__link:visited,
+.header__link:link {
   font-size: 14px;
   color: #ffffff; }
-  .header__link:not(:last-child) {
+  .header__link:visited:hover,
+  .header__link:link:hover {
+    color: #af943e; }
+  .header__link:visited:not(:last-child),
+  .header__link:link:not(:last-child) {
     margin-right: 15px; }
+
+footer {
+  background-color: #181a1b;
+  height: 500px;
+  font-family: 'Poppins', sans-serif; }
+
+.footer {
+  height: 100%; }
+
+.footer__content {
+  padding-top: 158px; }
+
+.footer__p {
+  color: #888888;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 20px;
+  max-width: 350px; }
+
+.footer__socialNetworks {
+  margin-top: 38px;
+  position: relative; }
+  .footer__socialNetworks a:link, .footer__socialNetworks a:visited {
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 6px 11px;
+    border: 1px solid #af943e; }
+    .footer__socialNetworks a:link:not(:last-child), .footer__socialNetworks a:visited:not(:last-child) {
+      margin-right: 7px; }
+  .footer__socialNetworks a:hover {
+    background-color: #af943e;
+    color: #181a1b; }
+
+.footer__center {
+  margin-top: 19px;
+  padding-left: 110px; }
+
+.footer__heading {
+  font-size: 18px;
+  line-height: 33px;
+  color: #ffffff;
+  text-transform: uppercase; }
+  .footer__heading::after {
+    content: '';
+    background-color: #af943e;
+    height: 2px;
+    display: block;
+    width: 40px;
+    margin: 12px 0; }
+
+.footer__list {
+  list-style: none;
+  line-height: 36px; }
+  .footer__list li::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f101";
+    color: #ffffff;
+    margin-right: 5px; }
+
+.footer__link:link,
+.footer__link:visited,
+.footer__link:active {
+  color: #888888;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 5px; }
+
+.footer__link:hover {
+  border-bottom: 1px solid #ffffff; }
+
+.footer__right {
+  margin-top: 19px;
+  align-self: center; }
+
+.copyright {
+  color: #ffffff;
+  background-color: #141516;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  height: 60px;
+  padding: 20px 0; }
 
 .btn-gold {
   padding: 15px 38px;
@@ -87,8 +174,8 @@ html {
   .btn-gold:active, .btn-gold:focus {
     outline: none; }
   .btn-gold:hover {
-    transform: translateY(-2px);
-    color: #666666; }
+    color: #ffffff;
+    background-color: #1c1c1c; }
 
 .map__btn {
   text-transform: uppercase;
@@ -128,7 +215,11 @@ html {
 
 .nav__list {
   display: flex; }
-  .nav__list a:hover::after {
+
+.nav__item {
+  list-style: none;
+  margin-top: 21px; }
+  .nav__item a:hover::after {
     content: '';
     background-color: #af943e;
     height: 2px;
@@ -138,10 +229,6 @@ html {
     margin-right: auto;
     margin-top: 14px;
     margin-bottom: 14px; }
-
-.nav__item {
-  list-style: none;
-  margin-top: 21px; }
   .nav__item:not(:last-child) {
     margin-right: 35px; }
 
@@ -460,7 +547,11 @@ html {
   color: #af943e; }
 
 .accordion-opened .accordion-toggle:before {
-  content: "\f107"; }
+  font-family: 'FontAwesome';
+  content: "\f107";
+  float: left;
+  margin-left: 80px;
+  color: #af943e; }
 
 .accordion-toggle {
   font-size: 25px;
@@ -483,10 +574,19 @@ html {
   font-family: 'Poppins', sans-serif;
   color: #666666;
   max-width: 67%;
-  padding: 54px 0 54px 168px;
-  margin-top: 50px;
-  margin-bottom: 0;
-  line-height: 24px; }
+  padding: 48px 0 48px 168px;
+  margin-top: 52px;
+  margin-bottom: 13px;
+  line-height: 23px;
+  position: relative; }
+  .accordion-inner::before {
+    content: '';
+    background-color: #af943e;
+    height: 60px;
+    width: 2px;
+    position: absolute;
+    top: -21px;
+    left: 83px; }
 
 .questions {
   margin-top: 60px; }
@@ -854,7 +954,8 @@ html {
     border: 1px solid #666666;
     padding: 12px 10px;
     width: 103%;
-    height: 134px; }
+    height: 134px;
+    outline: none; }
 
 .contact__btn {
   position: absolute;
@@ -892,15 +993,19 @@ html {
 
 .gold-card {
   padding: 0 15px;
-  margin-top: 102px; }
+  margin-top: 162px;
+  position: relative; }
 
 .gold-card__content {
+  position: absolute;
+  width: 1096px;
   background-color: #af943e;
   height: 120px;
   align-content: center;
   align-items: center;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  bottom: -61px; }
 
 .gold-card__text {
   font-family: 'Merriweather', serif;

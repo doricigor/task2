@@ -130,12 +130,14 @@
     margin-top: 48px;
     position: relative;
 
+
     textarea {
         margin-top: 14px;
         border: 1px solid $color-gray;
         padding: 12px 10px;
         width: 103%;
         height: 134px;
+        outline: none;
     }
 }
 

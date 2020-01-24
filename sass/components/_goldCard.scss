@@ -1,15 +1,19 @@
 .gold-card {
     padding: 0 15px;
-    margin-top: 102px;
+    margin-top: 162px;
+    position: relative;
 }
 
 .gold-card__content {
+    position: absolute;
+    width: 1096px;
     background-color: $color-gold-3;
     height: 120px;
     align-content: center;
     align-items: center;
     display: flex;
     justify-content: space-around;
+    bottom: -61px;
 }
 
 .gold-card__text {
