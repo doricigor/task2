@@ -456,13 +456,13 @@ footer {
 
 .box__left__container {
   background-color: #f3f4f5;
-  padding: 61px 157px 90px 26px;
+  padding: 61px 157px 90px 35px;
   height: 448px;
-  width: 618px;
+  width: 99%;
   margin-top: 10px; }
 
 .box__container {
-  padding-left: 42px;
+  padding-left: 32px;
   padding-right: 30px; }
 
 .box__text {
@@ -998,7 +998,7 @@ footer {
 
 .gold-card__content {
   position: absolute;
-  width: 1096px;
+  width: 97%;
   background-color: #af943e;
   height: 120px;
   align-content: center;
