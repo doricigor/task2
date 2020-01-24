@@ -1,12 +1,12 @@
 .gallery {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 59px;
 }
 
 .gallery__heading {
     &::after {
         @include gold-line;
-        margin: 10px auto;
+        margin: 14px auto;
         width: 40px;
     }
 }

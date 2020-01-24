@@ -23,5 +23,5 @@ $(document).on('show', '.accordion', function (e) {
 
 $(document).on('hide', '.accordion', function (e) {
     $(this).find('.accordion-heading').not($(e.target)).removeClass('accordion-opened');
-    // $('.accordion-heading a').toggleClass('fa-chevron-right fa-chevron-down');
+    $('.accordion-heading a').toggleClass('fa-chevron-right fa-chevron-down');
 });

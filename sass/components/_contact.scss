@@ -1,20 +1,26 @@
 .contact {
-    background-image: url(../img/contact.jpg);
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-color: $color-silver-4;
     margin-top: 394px;
-    height: 787px;
+    height: auto;
+    position: relative;
+}
+.contact__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .contact__content {
     padding-top: 65px;
     padding-left: 100px;
+    background-color: $color-silver-4;
+    opacity: .9;
 }
 
 .contact__heading {
     margin-bottom: 0;
+    letter-spacing: 1.5px;
 }
 
 .contact__subhead {
@@ -22,6 +28,7 @@
     color: $color-gray;
     line-height: 30px;
     font-family: 'Merriweather', serif;
+    letter-spacing: .1px;
 }
 
 .contact__info {
@@ -78,6 +85,7 @@
         color: $silver-text;
         line-height: 24px;
         display: block;
+        letter-spacing: 1.5px;
     }
 
     input {
@@ -112,7 +120,7 @@
     padding-left: 3px;
 
     input {
-        margin-top: 16px;
+        margin-top: 15px;
         padding-bottom: 6px;
     }
 }
@@ -121,13 +129,13 @@
     flex: 1;
 
     input {
-        margin-top: 16px;
+        margin-top: 15px;
         padding-bottom: 6px;
     }
 }
 
 .contact__textarea {
-    margin-top: 48px;
+    margin-top: 47px;
     position: relative;
 
 

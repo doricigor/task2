@@ -32,13 +32,13 @@
 }
 
 .story__heading {
-    margin-top: 24px;
+    margin-top: 31px;
 
     &::after {
         @include gold-line;
         width: 40px;
-        margin-top: 10px;
-        margin-bottom: 5px;
+        margin-top: 14px;
+        margin-bottom: 4px;
     }
 }
 
@@ -47,6 +47,7 @@
     font-size: 16px;
     color: $color-gray;
     margin-top: 10px;
+    letter-spacing: .1px;
 }
 
 .story__text {

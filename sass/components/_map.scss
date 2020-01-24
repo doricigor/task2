@@ -1,6 +1,5 @@
 .map {
     background-image: url(../img/map.jpg);
-    // background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -11,12 +10,13 @@
 
 .google {
     position: absolute;
-    right: 298px;
+    right: -87px;
     bottom: -1px;
     font-family: myriad-pro, sans-serif;
     font-size: 18px;
     color: $color-gray-2;
     letter-spacing: 1.1px;
+    opacity: .7;
 }
 
 .map__content {
@@ -51,7 +51,7 @@
 .map__heading {
     line-height: 36px;
     margin-top: 18px;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 
 .map__list {

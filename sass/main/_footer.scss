@@ -20,7 +20,7 @@ footer {
     margin-top: 20px;
     max-width: 350px;
 }
-
+// TODO geometric
 .footer__socialNetworks {
     margin-top: 38px;
     position: relative;
@@ -68,15 +68,21 @@ footer {
 .footer__list {
     list-style: none;
     line-height: 36px;
+}
+.footer__list--2 {
+    padding-left: 26px;
+}
 
-    li {
-        &::before {
-            font-family: 'Font Awesome 5 Free';
-            content: "\f101";
-            color: $color-white;
-            margin-right: 5px;
-        }
+.arrow {
+    &::before {
+        content: "\00BB \0020";
+        color: $color-white;
+        margin-right: 5px;
     }
+}
+.footer__link i {
+    margin-left: -30px;
+    margin-right: 13px;
 }
 
 .footer__link:link,
@@ -91,6 +97,8 @@ footer {
 .footer__link:hover {
     border-bottom: 1px solid $color-white;
 }
+
+
 
 .footer__right {
     margin-top: 19px;

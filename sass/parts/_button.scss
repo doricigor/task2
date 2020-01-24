@@ -26,11 +26,12 @@
     background-color: $color-white;
     color: $color-black;
     border: 2px solid $color-black;
-    padding: 18px 33px;
+    padding: 17px 33px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     outline: none;
-    margin-top: 40px;
+    margin-top: 39px;
+    letter-spacing: .1px;
 
     &:active,
     &:focus {

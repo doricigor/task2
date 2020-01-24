@@ -19,14 +19,13 @@
 }
 
 .banner__btn {
-    margin-top: 20px;
+    margin-top: 18px;
+    letter-spacing: .4px;
+    padding: 14px 36px;
 }
 
 .banner__heading {
     padding-bottom: 0;
-
-
-
     &::after {
         @include gold-line;
         width: 50px;
@@ -34,14 +33,13 @@
         margin-left: 5px;
     }
 }
-
-
-
 .banner__p {
     font-size: 18px;
     font-family: 'Merriweather', serif;
     margin-top: 29px;
-    letter-spacing: 0.9px;
-    max-width: 550px;
+    letter-spacing: 0.2px;
+    max-width: 500px;
     margin-top: 28px;
+    letter-spacing: .2px;
+    line-height: 29px;
 }
