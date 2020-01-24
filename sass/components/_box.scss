@@ -18,6 +18,16 @@
     height: 545px;
 }
 
+.box__right__container {}
+
+.box__left__container {
+    background-color: $color-silver;
+    padding: 61px 157px 90px 26px;
+    height: 448px;
+    width: 618px;
+    margin-top: 10px;
+}
+
 .box__container {
     padding-left: 42px;
     padding-right: 30px;
@@ -54,9 +64,8 @@
 }
 
 .box__left--1 {
-    background-color: $color-silver;
-    padding: 72px 175px 90px 28px;
-    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .box__right--2 {

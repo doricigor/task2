@@ -1,0 +1,147 @@
+.contact {
+    background-image: url(../img/contact.jpg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $color-silver-4;
+    margin-top: 394px;
+    height: 787px;
+}
+
+.contact__content {
+    padding-top: 65px;
+    padding-left: 100px;
+}
+
+.contact__heading {
+    margin-bottom: 0;
+}
+
+.contact__subhead {
+    font-size: 16px;
+    color: $color-gray;
+    line-height: 30px;
+    font-family: 'Merriweather', serif;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-gray;
+    margin-top: 33px;
+}
+
+.contact__info--left {
+    list-style: none;
+}
+
+.contact__info--right {
+    list-style: none;
+}
+
+.contact__write {
+    text-transform: capitalize;
+    margin-top: 15px;
+    letter-spacing: 0.2px;
+    position: relative;
+
+    &::after {
+        content: '';
+        height: 1px;
+        background-color: $color-gray;
+        width: 173px;
+        position: absolute;
+        bottom: -14px;
+        left: -1px;
+    }
+
+    &::before {
+        content: '';
+        height: 4px;
+        background-color: $color-gray;
+        width: 60px;
+        position: absolute;
+        bottom: -18px;
+        left: -1px;
+    }
+}
+
+.contact__form {
+    margin-top: 55px;
+    width: 115%;
+
+    label {
+        font-size: 14px;
+        color: $silver-text;
+        line-height: 24px;
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $color-gray;
+        display: block;
+
+        &:focus {
+            border-bottom: 1px solid $color-light-blue;
+            outline: none;
+        }
+    }
+
+    ::placeholder {
+        color: $color-gray;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.contact__inputs {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.contact__inputs--left {
+    flex: 1;
+    margin-right: 47px;
+    padding-left: 3px;
+
+    input {
+        margin-top: 16px;
+        padding-bottom: 6px;
+    }
+}
+
+.contact__inputs--right {
+    flex: 1;
+
+    input {
+        margin-top: 16px;
+        padding-bottom: 6px;
+    }
+}
+
+.contact__textarea {
+    margin-top: 48px;
+    position: relative;
+
+    textarea {
+        margin-top: 14px;
+        border: 1px solid $color-gray;
+        padding: 12px 10px;
+        width: 103%;
+        height: 134px;
+    }
+}
+
+.contact__btn {
+    position: absolute;
+    bottom: -63px;
+    right: -66px;
+    padding: 15px 50px;
+}

@@ -7,7 +7,7 @@
 }
 
 .testimonials__content {
-    padding: 50px 125px;
+    padding: 44px 125px;
     // border-right: 1px solid $color-gold;
     // border-left: 1px solid $color-gold;
     // border-bottom: 1px solid $color-gold;
@@ -20,19 +20,24 @@
 
 .testimonials__heading {
     color: $color-white;
-    padding-bottom: 15px;
+    padding-bottom: 11px;
 
     &::after {
         @include gold-line;
         width: 40px;
-        margin: 10px auto;
+        margin: 14px auto;
     }
 }
 
 .testimonials__text {
     color: $color-white;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     letter-spacing: 1.1px;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: lighter;
 }
 
 .testimonials__span {
