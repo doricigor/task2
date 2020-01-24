@@ -1,0 +1,21 @@
+.gold-card {
+    padding: 0 15px;
+    margin-top: 102px;
+}
+
+.gold-card__content {
+    background-color: $color-gold-3;
+    height: 120px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gold-card__text {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: $color-white;
+    line-height: 33px;
+    margin-top: 13px;
+}
