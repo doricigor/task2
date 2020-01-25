@@ -7,7 +7,6 @@
     margin-left: 80px;
     color: $color-gold;
 }
-
 .accordion-opened .accordion-toggle::before {
     font-family: 'FontAwesome';
     content: "\f107";
@@ -15,7 +14,6 @@
     margin-left: 80px;
     color: $color-gold;
 }
-
 .accordion-toggle {
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
@@ -28,16 +26,13 @@
         text-decoration: none;
     }
 }
-
 .accordion-group {
     padding: 10px 0;
 }
-
 .accordion-body {
     background-color: $color-silver-2;
     width: 100vw;
 }
-
 .accordion-inner {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;

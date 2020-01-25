@@ -2,7 +2,6 @@
     position: relative;
     max-height: 780px;
 }
-
 .banner__content {
     position: absolute;
     height: 295px;
@@ -12,18 +11,15 @@
     padding-bottom: 12px;
     padding-left: 13px;
 }
-
 .banner__wrap {
     width: 50%;
     margin-top: -20px;
 }
-
 .banner__btn {
     margin-top: 18px;
     letter-spacing: .4px;
     padding: 14px 36px;
 }
-
 .banner__heading {
     padding-bottom: 0;
     &::after {

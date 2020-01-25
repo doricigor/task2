@@ -2,60 +2,47 @@
     padding: 100px 0;
     text-align: center;
 }
-
 .services__heading {
-
-
     &::after {
         @include gold-line;
         width: 40px;
         margin: 20px auto;
-
     }
 }
-
 .services__text {
     color: $color-gray;
     font-size: 16px;
     letter-spacing: 1.2px;
 }
-
 .services__cards {
     padding: 93px 24px 34px 15px;
 }
-
 .services__card {
-
     img {
         margin-top: 45px;
         margin-bottom: 30px;
     }
-
     &--1 {
         background-image: url(../img/services/services1.jpg);
         width: 259px;
         height: 200px;
     }
-
     &--2 {
         background-image: url(../img/services/services2.jpg);
         width: 259px;
         height: 200px;
     }
-
     &--3 {
         background-image: url(../img/services/services3.jpg);
         width: 259px;
         height: 200px;
     }
-
     &--4 {
         background-image: url(../img/services/services4.jpg);
         width: 259px;
         height: 200px;
     }
 }
-
 .services__span {
     font-size: 18px;
     color: $color-white;

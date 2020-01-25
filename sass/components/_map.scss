@@ -7,7 +7,6 @@
     margin-top: 50px;
     position: relative;
 }
-
 .google {
     position: absolute;
     right: -87px;
@@ -18,14 +17,12 @@
     letter-spacing: 1.1px;
     opacity: .7;
 }
-
 .map__content {
     position: relative;
     width: 100%;
     height: 100%;
 
 }
-
 // BOX - left side
 .map__box {
     height: 540px;
@@ -39,7 +36,6 @@
     top: 199px;
     left: 81px;
 }
-
 .map__goldSpan {
     color: $color-gold;
     font-size: 14px;
@@ -47,25 +43,21 @@
     letter-spacing: 5.5px;
     text-transform: uppercase;
 }
-
 .map__heading {
     line-height: 36px;
     margin-top: 18px;
     letter-spacing: .5px;
 }
-
 .map__list {
     list-style: none;
     line-height: 25px;
     margin-top: 24px;
 }
-
 .map__item {
     color: $color-gray-2;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
-
 // BOX RIGHT - Social
 .map__social {
     height: 181px;
@@ -74,11 +66,9 @@
     bottom: -186px;
     right: 55px;
 }
-
 .map__icons {
     font-size: 25px;
 }
-
 .map__icons--mail:link,
 .map__icons--mail:active,
 .map__icons--mail:visited {
@@ -91,7 +81,6 @@
     color: $color-white;
     background-color: $color-dark-blue;
 }
-
 .map__icons--linkedin:link,
 .map__icons--linkedin:active,
 .map__icons--linkedin:visited {
@@ -103,7 +92,6 @@
     bottom: -88px;
     left: 179px;
 }
-
 .map__icons--mailxs:link,
 .map__icons--mailxs:active,
 .map__icons--mailxs:visited {
@@ -115,7 +103,6 @@
     color: $color-white;
     background-color: $color-gold-2;
 }
-
 .map__icons--twitter:link,
 .map__icons--twitter:active,
 .map__icons--twitter:visited {
@@ -127,7 +114,6 @@
     top: -2px;
     left: 179px;
 }
-
 .map__icons--facebook:link,
 .map__icons--facebook:active,
 .map__icons--facebook:visited {
@@ -139,7 +125,6 @@
     color: $color-white;
     background-color: $color-dark-blue;
 }
-
 .map__icons--instagram:link,
 .map__icons--instagram:active,
 .map__icons--instagram:visited {

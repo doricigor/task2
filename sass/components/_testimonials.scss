@@ -4,20 +4,27 @@
     padding-top: 98px;
     padding-bottom: 100px;
     margin-top: 1px;
+    position: relative;
 }
-// TODO quotes
 .testimonials__content {
     padding: 44px 125px;
-    // border-right: 1px solid $color-gold;
-    // border-left: 1px solid $color-gold;
-    // border-bottom: 1px solid $color-gold;
     border: 1px solid $color-gold;
     max-width: 1096px;
     height: 325px;
 }
-
-.testimonials__blockquote {}
-
+.testimonials__quote {
+    height: 50px;
+    background-color: $color-dark-2;
+    color: $color-gold;
+    padding: 0 17px;
+    font-size: 70px;
+    position: absolute;
+    top: 61px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: initial;
+}
 .testimonials__heading {
     color: $color-white;
     padding-bottom: 11px;
@@ -28,7 +35,6 @@
         margin: 14px auto;
     }
 }
-
 .testimonials__text {
     color: $color-white;
     margin-top: 5px;
@@ -39,7 +45,6 @@
     line-height: 30px;
     font-weight: lighter;
 }
-
 .testimonials__span {
     text-transform: uppercase;
     color: $color-white;

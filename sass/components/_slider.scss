@@ -10,7 +10,6 @@
         background-position: right;
         background-size: cover;
     }
-
     .slick-dots {
         display: flex;
         justify-content: center;
@@ -39,21 +38,16 @@
             font-size: 0;
         }
     }
-
 }
-
-
 
 // Testimonials slider
 .testimonials__slider {
     width: 100%;
-
     .testimonials__slide {
         position: relative;
         width: 100%;
         height: auto;
     }
-
     .slick-dots {
         display: flex;
         justify-content: center;
@@ -61,7 +55,6 @@
         bottom: 23px;
         left: 50.5%;
         transform: translateX(-59%);
-
         list-style-type: none;
 
         button {
@@ -73,11 +66,9 @@
             width: 10px;
             margin: 0 4px;
         }
-
         li.slick-active button {
             background-color: $color-gold;
         }
-
         li button {
             font-size: 0;
         }

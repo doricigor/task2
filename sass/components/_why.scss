@@ -3,37 +3,30 @@
     background-position: left;
     background-size: auto;
     background-repeat: no-repeat;
-    // height: 493px;
     margin-top: 64px;
     background-color: $color-gold;
 }
-
 .why__container {
     box-sizing: border-box;
 }
-
 .why__content {
     background-color: $color-gold;
     padding: 67px 92px 72px 105px;
 }
-
 .why__heading {
     color: $color-white;
     text-transform: capitalize;
     letter-spacing: 0.5px;
 }
-
 .why__tabs {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
 }
-
 .tab {
     margin-left: -10px;
     margin-top: 18px;
 }
-
 .why__tabs label {
     order: 1;
     opacity: .4;
@@ -46,10 +39,8 @@
     font-weight: 400;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    // margin-right: 30px;
     color: $color-white;
 }
-
 .why__tabs .tab {
     order: 99;
     flex-grow: 1;
@@ -61,11 +52,9 @@
     text-align: justify;
     position: relative;
 }
-
 .why__tabs input[type="radio"] {
     display: none;
 }
-
 .why__tabs input[type="radio"]:checked+label {
     background: $color-gold;
     opacity: 1;
@@ -83,7 +72,6 @@
         left: 142px;
     }
 }
-
 .why__tabs input[type="radio"]:checked+label+.tab {
     display: block;
 }

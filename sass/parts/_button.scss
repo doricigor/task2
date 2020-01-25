@@ -14,13 +14,11 @@
         outline: none;
     }
 
-
     &:hover {
         color: $color-white;
         background-color: $color-black;
     }
 }
-
 .map__btn {
     text-transform: uppercase;
     background-color: $color-white;
@@ -43,7 +41,6 @@
         background-color: $color-black;
     }
 }
-
 .gold-card__btn {
     text-transform: uppercase;
     background-color: $color-white;

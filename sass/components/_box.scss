@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
     max-height: 550px;
 }
-
 .box__left {
     padding-top: 42px;
     margin-top: -1px;
@@ -17,7 +16,6 @@
     background-repeat: no-repeat;
     height: 550px;
 }
-
 .box__left__container {
     background-color: $color-silver;
     padding: 61px 157px 90px 28px;
@@ -25,35 +23,25 @@
     width: 99%;
     margin-top: 9px;
 }
-
 .box__container {
     padding-left: 32px;
     padding-right: 30px;
 }
-
-.box__container--1 {
-
-}
-
 .box__container--2 {
     padding-left: 43px;
     padding-right: 30px;
 }
-
 .box__text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
-
 .box__text--2 {
     color: $color-white;
 }
-
 .box__text--1 {
     color: $color-dark;
 }
-
 .box__heading {
     color: $color-white;
     padding-bottom: 33px;
@@ -61,20 +49,16 @@
     line-height: 48px;
     letter-spacing: 1px;
 }
-
 .box__heading--2 {
     color: $color-white;
 }
-
 .box__heading--1 {
     color: $color-dark;
 }
-
 .box__left--1 {
     padding-left: 0;
     padding-right: 0;
 }
-
 .box__right--2 {
     background-color: $color-black;
     padding: 61px 132px 67px 48px;
