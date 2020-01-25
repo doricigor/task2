@@ -5,8 +5,40 @@
     display: block;
     
 }
-
 @mixin bg-pos {
     background-position: center;
     background-size: cover;
+}
+
+// Media query:
+/*
+$breakpoints:
+s small-phone - 576px
+xs phone - 640px
+sm tab-port - 768px
+md tab-land  - 992px
+lg small-pc  - 1200px
+
+@include responsive(tab-land) {
+        
+}
+*/
+
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == s {
+        @media only screen and (max-width: 576px) { @content }; 
+    }
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 640px) { @content }; 
+    }
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 768px) { @content }; 
+    }
+    @if $breakpoint == md {
+        @media only screen and (max-width: 992px) { @content }; 
+    }
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 1200px) { @content }; 
+    }
+    
 }

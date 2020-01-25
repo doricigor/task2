@@ -16,6 +16,10 @@
     color: $color-gray-2;
     letter-spacing: 1.1px;
     opacity: .7;
+
+    @include responsive(lg) {
+        right: 25px;
+    }
 }
 .map__content {
     position: relative;
@@ -35,6 +39,13 @@
     position: absolute;
     top: 199px;
     left: 81px;
+    @include responsive(lg) {
+        height: 455px;
+        width: 360px;
+        padding: 33px 90px 60px 50px;
+        top: 199;
+        left: 81;
+    }
 }
 .map__goldSpan {
     color: $color-gold;
@@ -65,6 +76,11 @@
     position: absolute;
     bottom: -186px;
     right: 55px;
+    @include responsive(lg) {
+        right: 69px;
+        bottom: -183px;
+    }
+
 }
 .map__icons {
     font-size: 25px;

@@ -15,6 +15,9 @@
     padding-left: 100px;
     background-color: $color-silver-4;
     opacity: .9;
+    @include responsive(lg) {
+        padding-left: 55px;
+    }
 }
 .contact__heading {
     margin-bottom: 0;
@@ -71,12 +74,20 @@
     margin-top: 55px;
     width: 115%;
 
+    @include responsive(lg) {
+        width: 100%;
+    }
+
     label {
         font-size: 14px;
         color: $silver-text;
         line-height: 24px;
         display: block;
         letter-spacing: 1.5px;
+
+        @include responsive(lg) {
+            color: $color-gray;
+        }
     }
     input {
         width: 100%;
@@ -120,7 +131,6 @@
 }
 .contact__textarea {
     margin-top: 47px;
-    position: relative;
     textarea {
         margin-top: 14px;
         border: 1px solid $color-gray;
@@ -132,8 +142,11 @@
 }
 
 .contact__btn {
-    position: absolute;
-    bottom: -63px;
-    right: -66px;
+    float: right;
+    margin-top: 14px;
+    margin-right: -14px;
     padding: 15px 50px;
+    @include responsive(lg) {
+        margin-bottom: 30px;
+    }
 }

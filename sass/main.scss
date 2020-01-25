@@ -1,10 +1,10 @@
 @import "config/variable";
 @import "config/animations";
 
+@import "helpers/mixins";
+
 @import "base/base";
 @import "base/typography";
-
-@import "helpers/mixins";
 
 @import "main/header";
 @import "main/footer";

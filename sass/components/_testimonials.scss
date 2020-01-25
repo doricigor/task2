@@ -11,6 +11,14 @@
     border: 1px solid $color-gold;
     max-width: 1096px;
     height: 325px;
+    @include responsive(md) {
+        padding: 44px 103px;
+        max-width: 980px;
+    }
+    @include responsive(md) {
+        padding: 44px 83px;
+        max-width: 940px;
+    }
 }
 .testimonials__quote {
     height: 50px;

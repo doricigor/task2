@@ -3,6 +3,14 @@
     width: 100%;
     padding-top: 145px;
     padding-bottom: 170px;
+    @include responsive(lg) {
+        padding-top: 60px;
+    }
+    @include responsive(md) {
+        padding-top: 10px;
+        padding-bottom: 110px;
+    }
+    
 }
 .story__content--right {
     display: flex;
@@ -10,10 +18,21 @@
     justify-content: center;
     padding: 10px;
     padding-top: 55px;
+    @include responsive(md) {
+        padding-left: 15px;
+    }
 }
 .story__img {
     position: relative;
     z-index: 5;
+    img {
+        @include responsive(lg) {
+            width: 95%;
+        }
+        @include responsive(md) {
+            width: 100%;
+        }
+    }
 
     &::after {
         content: '';
@@ -24,6 +43,17 @@
         top: 24px;
         right: 77px;
         z-index: -1;
+
+        @include responsive(lg) {
+            width: 420px;
+            right: 19px;
+        }
+        @include responsive(md) {
+            width: 314px;
+            right: 6px;
+            top: 17px;
+            height: 73%;
+        }
     }
 }
 .story__heading {
@@ -42,6 +72,9 @@
     color: $color-gray;
     margin-top: 10px;
     letter-spacing: .1px;
+    @include responsive(md) {
+        font-size: 15px;
+    }
 }
 .story__text {
     font-family: 'Poppins', sans-serif;
@@ -49,4 +82,7 @@
     color: $color-gray;
     line-height: 24px;
     margin-bottom: 20px;
+    @include responsive(md) {
+        font-size: 12px;
+    }
 }

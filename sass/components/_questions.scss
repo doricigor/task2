@@ -6,6 +6,9 @@
     float: left;
     margin-left: 80px;
     color: $color-gold;
+    @include responsive(md) {
+        margin-left: 10px;
+    }
 }
 .accordion-opened .accordion-toggle::before {
     font-family: 'FontAwesome';
@@ -46,6 +49,14 @@
     position: relative;
     text-align: justify;
 
+    @include responsive(lg) {
+        max-width: 80%;
+    }
+    @include responsive(md) {
+        padding: 35px 0 25px 95px;
+        font-size: 13px;
+    }
+
     // TODO - arrow down
 
     &::before {
@@ -56,6 +67,9 @@
         position: absolute;
         top: -21px;
         left: 83px;
+        @include responsive(md) {
+            left: 12px;
+        }
     }
     &::after {
         content: '';
@@ -73,6 +87,7 @@
 }
 .questions {
     margin-top: 60px;
+    overflow: hidden;
 }
 
 .questions h2 {

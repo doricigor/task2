@@ -1,6 +1,6 @@
 .gallery {
     text-align: center;
-    margin-top: 59px;
+    margin-top: 62px;
 }
 .gallery__heading {
     &::after {
@@ -18,5 +18,13 @@
         margin-bottom: 23px;
         height: 300px;
         width: 300px;
+        @include responsive(lg) {
+            height: 250px;
+            width: 250px;
+        }
+        
+    }
+    @include responsive(md) {
+        justify-content: space-around;
     }
 }

@@ -1,17 +1,26 @@
 .why {
-    background-image: url(../img/whyus.jpg);
-    background-position: left;
-    background-size: auto;
-    background-repeat: no-repeat;
-    margin-top: 64px;
+    margin-top: 61px;
     background-color: $color-gold;
+    position: relative;
+ 
 }
 .why__container {
     box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include responsive(lg) {
+        opacity: .9;   
+    }
 }
 .why__content {
+    max-height: 494px;
     background-color: $color-gold;
-    padding: 67px 92px 72px 105px;
+    padding: 68px 92px 70px 105px;
+    @include responsive(md) {
+        padding: 68px 0 70px 66px;
+    }
 }
 .why__heading {
     color: $color-white;
@@ -22,6 +31,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
+    @include responsive(lg) {
+        margin-top: 30px;
+    }
 }
 .tab {
     margin-left: -10px;
@@ -40,6 +52,12 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: $color-white;
+    @include responsive(lg) {
+        padding: 10px 27px 10px 30px;
+    }
+    @include responsive(md) {
+        padding: 10px 35px 10px 10px;
+    }
 }
 .why__tabs .tab {
     order: 99;
@@ -70,6 +88,16 @@
         position: absolute;
         top: 217px;
         left: 142px;
+        @include responsive(lg) {
+            top: 188px;
+            left: 143px;
+            width: 440px;
+        }
+        @include responsive(md) {
+            top: 181px;
+            left: 105px;
+            width: 400px;
+        }
     }
 }
 .why__tabs input[type="radio"]:checked+label+.tab {
@@ -87,6 +115,6 @@
     .why__tabs label {
         width: 100%;
         margin-right: 0;
-        margin-top: 0.2rem;
+        margin-top: 2px;
     }
 }

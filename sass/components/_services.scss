@@ -1,6 +1,9 @@
 .services {
     padding: 100px 0;
     text-align: center;
+    @include responsive(md) {
+        margin-top: 270px;
+    }
 }
 .services__heading {
     &::after {
@@ -16,6 +19,9 @@
 }
 .services__cards {
     padding: 93px 24px 34px 15px;
+    @include responsive(md) {
+      padding: 50px 24px 34px 15px;
+    }
 }
 .services__card {
     img {
@@ -26,21 +32,49 @@
         background-image: url(../img/services/services1.jpg);
         width: 259px;
         height: 200px;
+        @include responsive(lg) {
+            width: 210px;
+        }
+        @include responsive(md) {
+            margin: 15px auto;
+            width: 259px;
+        }
     }
     &--2 {
         background-image: url(../img/services/services2.jpg);
         width: 259px;
         height: 200px;
+        @include responsive(lg) {
+            width: 210px;
+        }
+        @include responsive(md) {
+            margin: 15px auto;
+            width: 259px;
+        }
     }
     &--3 {
         background-image: url(../img/services/services3.jpg);
         width: 259px;
         height: 200px;
+        @include responsive(lg) {
+            width: 210px;
+        }
+        @include responsive(md) {
+            margin: 15px auto;
+            width: 259px;
+        }
     }
     &--4 {
         background-image: url(../img/services/services4.jpg);
         width: 259px;
         height: 200px;
+        @include responsive(lg) {
+            width: 210px;
+        }
+        @include responsive(md) {
+            margin: 15px auto;
+            width: 259px;
+        }
     }
 }
 .services__span {
@@ -49,4 +83,7 @@
     text-transform: uppercase;
     display: block;
     letter-spacing: .8px;
+    @include responsive(lg) {
+        font-size: 15px;
+    }
 }

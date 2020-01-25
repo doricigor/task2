@@ -1,6 +1,9 @@
 .banner {
     position: relative;
     max-height: 780px;
+    @include responsive(md) {
+         max-height: 500px;
+    }
 }
 .banner__content {
     position: absolute;
@@ -22,6 +25,9 @@
 }
 .banner__heading {
     padding-bottom: 0;
+    @include responsive(md) {
+        font-size: 42px;   
+    }
     &::after {
         @include gold-line;
         width: 50px;
