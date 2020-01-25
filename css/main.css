@@ -193,6 +193,9 @@ footer {
 .footer__right {
   margin-top: 17px;
   align-self: center; }
+  @media only screen and (max-width: 1200px) {
+    .footer__right {
+      margin-top: 0; } }
 
 .copyright {
   color: #ffffff;
@@ -254,6 +257,9 @@ footer {
   .gold-card__btn:hover {
     color: #ffffff;
     background-color: #1c1c1c; }
+  @media only screen and (max-width: 992px) {
+    .gold-card__btn {
+      padding: 11px 20px; } }
 
 .nav__menu {
   margin-bottom: 0; }
@@ -980,6 +986,10 @@ footer {
   @media only screen and (max-width: 1200px) {
     .google {
       right: 25px; } }
+  @media only screen and (max-width: 992px) {
+    .google {
+      right: -10px;
+      font-size: 15px; } }
 
 .map__content {
   position: relative;
@@ -1001,9 +1011,10 @@ footer {
     .map__box {
       height: 455px;
       width: 360px;
-      padding: 33px 90px 60px 50px;
-      top: 199;
-      left: 81; } }
+      padding: 33px 90px 60px 50px; } }
+  @media only screen and (max-width: 992px) {
+    .map__box {
+      left: 0; } }
 
 .map__goldSpan {
   color: #af943e;
@@ -1037,6 +1048,9 @@ footer {
     .map__social {
       right: 69px;
       bottom: -183px; } }
+  @media only screen and (max-width: 992px) {
+    .map__social {
+      right: -90px; } }
 
 .map__icons {
   font-size: 25px; }
@@ -1049,9 +1063,13 @@ footer {
   left: 1px;
   border: 1px solid transparent;
   padding: 70px 73px;
-  padding-left: 78px;
   color: #ffffff;
   background-color: #212121; }
+  @media only screen and (max-width: 992px) {
+    .map__icons--mail:link,
+    .map__icons--mail:active,
+    .map__icons--mail:visited {
+      padding: 43px 49px; } }
 
 .map__icons--linkedin:link,
 .map__icons--linkedin:active,
@@ -1063,6 +1081,13 @@ footer {
   padding: 26px 33px;
   bottom: -88px;
   left: 179px; }
+  @media only screen and (max-width: 992px) {
+    .map__icons--linkedin:link,
+    .map__icons--linkedin:active,
+    .map__icons--linkedin:visited {
+      padding: 13px 23px;
+      bottom: -9px;
+      left: 125px; } }
 
 .map__icons--mailxs:link,
 .map__icons--mailxs:active,
@@ -1074,6 +1099,13 @@ footer {
   padding: 26px 32px;
   color: #ffffff;
   background-color: #b8976a; }
+  @media only screen and (max-width: 992px) {
+    .map__icons--mailxs:link,
+    .map__icons--mailxs:active,
+    .map__icons--mailxs:visited {
+      padding: 13px 20px;
+      top: -66px;
+      right: 190px; } }
 
 .map__icons--twitter:link,
 .map__icons--twitter:active,
@@ -1085,6 +1117,13 @@ footer {
   padding: 27px 31px;
   top: -2px;
   left: 179px; }
+  @media only screen and (max-width: 992px) {
+    .map__icons--twitter:link,
+    .map__icons--twitter:active,
+    .map__icons--twitter:visited {
+      padding: 13px 20px;
+      top: -3px;
+      left: 126px; } }
 
 .map__icons--facebook:link,
 .map__icons--facebook:active,
@@ -1096,6 +1135,13 @@ footer {
   padding: 26px 36px;
   color: #ffffff;
   background-color: #212121; }
+  @media only screen and (max-width: 992px) {
+    .map__icons--facebook:link,
+    .map__icons--facebook:active,
+    .map__icons--facebook:visited {
+      padding: 13px 23px;
+      bottom: 56px;
+      right: 193px; } }
 
 .map__icons--instagram:link,
 .map__icons--instagram:active,
@@ -1107,12 +1153,24 @@ footer {
   padding: 25px 32px;
   color: #ffffff;
   background-color: #b8976a; }
+  @media only screen and (max-width: 992px) {
+    .map__icons--instagram:link,
+    .map__icons--instagram:active,
+    .map__icons--instagram:visited {
+      padding: 13px 22px;
+      bottom: -8px;
+      right: 125px; } }
 
 .contact {
   background-color: #f1f1f1;
   margin-top: 394px;
   height: auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+
+@media only screen and (max-width: 992px) {
+  .contact__row {
+    padding-top: 40px; } }
 
 .contact__container {
   position: absolute;
@@ -1128,6 +1186,9 @@ footer {
   @media only screen and (max-width: 1200px) {
     .contact__content {
       padding-left: 55px; } }
+  @media only screen and (max-width: 992px) {
+    .contact__content {
+      padding: 25px 25px 0 25px; } }
 
 .contact__heading {
   margin-bottom: 0;
@@ -1139,6 +1200,9 @@ footer {
   line-height: 30px;
   font-family: 'Merriweather', serif;
   letter-spacing: .1px; }
+  @media only screen and (max-width: 992px) {
+    .contact__subhead {
+      font-size: 15px; } }
 
 .contact__info {
   display: flex;
@@ -1234,6 +1298,9 @@ footer {
     width: 103%;
     height: 134px;
     outline: none; }
+    @media only screen and (max-width: 992px) {
+      .contact__textarea textarea {
+        width: 100%; } }
 
 .contact__btn {
   float: right;
@@ -1243,6 +1310,9 @@ footer {
   @media only screen and (max-width: 1200px) {
     .contact__btn {
       margin-bottom: 30px; } }
+  @media only screen and (max-width: 992px) {
+    .contact__btn {
+      margin-right: 0; } }
 
 .clients {
   text-align: center;
@@ -1267,6 +1337,9 @@ footer {
 .clients__cards--1 {
   margin-top: 128px;
   align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .clients__cards--1 {
+      margin-top: 90px; } }
 
 .clients__cards--2 {
   margin-top: 97px;
@@ -1295,3 +1368,6 @@ footer {
   line-height: 33px;
   margin-top: 13px;
   font-weight: normal; }
+  @media only screen and (max-width: 992px) {
+    .gold-card__text {
+      font-size: 15px; } }

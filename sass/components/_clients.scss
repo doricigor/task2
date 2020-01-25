@@ -20,6 +20,9 @@
 .clients__cards--1 {
     margin-top: 128px;
     align-items: center;
+    @include responsive(md) {
+        margin-top: 90px;
+    }
 }
 .clients__cards--2 {
     margin-top: 97px;

@@ -62,4 +62,7 @@
         color: $color-white;
         background-color: $color-black;
     }
+    @include responsive(md) {
+        padding: 11px 20px;
+    }
 }

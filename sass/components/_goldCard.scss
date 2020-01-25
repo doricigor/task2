@@ -21,4 +21,7 @@
     line-height: 33px;
     margin-top: 13px;
     font-weight: normal;
+    @include responsive(md) {
+        font-size: 15px;
+    }
 }

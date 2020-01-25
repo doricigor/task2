@@ -97,4 +97,7 @@ footer {
 .footer__right {
     margin-top: 17px;
     align-self: center;
+    @include responsive(lg) {
+        margin-top: 0;
+    }
 }

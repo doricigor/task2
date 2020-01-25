@@ -3,6 +3,12 @@
     margin-top: 394px;
     height: auto;
     position: relative;
+    overflow: hidden;
+}
+.contact__row {
+    @include responsive(md) {
+        padding-top: 40px;
+    }
 }
 .contact__container {
     position: absolute;
@@ -18,6 +24,9 @@
     @include responsive(lg) {
         padding-left: 55px;
     }
+    @include responsive(md) {
+        padding: 25px 25px 0 25px;
+    }
 }
 .contact__heading {
     margin-bottom: 0;
@@ -29,6 +38,9 @@
     line-height: 30px;
     font-family: 'Merriweather', serif;
     letter-spacing: .1px;
+    @include responsive(md) {
+        font-size: 15px;
+    }
 }
 .contact__info {
     display: flex;
@@ -138,9 +150,11 @@
         width: 103%;
         height: 134px;
         outline: none;
+        @include responsive(md) {
+            width: 100%;
+        }
     }
 }
-
 .contact__btn {
     float: right;
     margin-top: 14px;
@@ -148,5 +162,8 @@
     padding: 15px 50px;
     @include responsive(lg) {
         margin-bottom: 30px;
+    }
+    @include responsive(md) {
+        margin-right: 0;
     }
 }

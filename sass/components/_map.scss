@@ -20,6 +20,10 @@
     @include responsive(lg) {
         right: 25px;
     }
+    @include responsive(md) {
+        right: -10px;
+        font-size: 15px;
+    }
 }
 .map__content {
     position: relative;
@@ -43,8 +47,9 @@
         height: 455px;
         width: 360px;
         padding: 33px 90px 60px 50px;
-        top: 199;
-        left: 81;
+    }
+    @include responsive(md) {
+        left: 0;
     }
 }
 .map__goldSpan {
@@ -80,7 +85,9 @@
         right: 69px;
         bottom: -183px;
     }
-
+    @include responsive(md) {
+        right: -90px;
+    }
 }
 .map__icons {
     font-size: 25px;
@@ -93,9 +100,11 @@
     left: 1px;
     border: 1px solid transparent;
     padding: 70px 73px;
-    padding-left: 78px;
     color: $color-white;
     background-color: $color-dark-blue;
+    @include responsive(md) {
+        padding: 43px 49px;
+    }
 }
 .map__icons--linkedin:link,
 .map__icons--linkedin:active,
@@ -107,6 +116,11 @@
     padding: 26px 33px;
     bottom: -88px;
     left: 179px;
+    @include responsive(md) {
+        padding: 13px 23px;
+        bottom: -9px;
+        left: 125px;
+    }
 }
 .map__icons--mailxs:link,
 .map__icons--mailxs:active,
@@ -118,6 +132,11 @@
     padding: 26px 32px;
     color: $color-white;
     background-color: $color-gold-2;
+    @include responsive(md) {
+        padding: 13px 20px;
+        top: -66px;
+        right: 190px;
+    }
 }
 .map__icons--twitter:link,
 .map__icons--twitter:active,
@@ -129,6 +148,11 @@
     padding: 27px 31px;
     top: -2px;
     left: 179px;
+    @include responsive(md) {
+        padding: 13px 20px;
+        top: -3px;
+        left: 126px;
+    }
 }
 .map__icons--facebook:link,
 .map__icons--facebook:active,
@@ -140,6 +164,11 @@
     padding: 26px 36px;
     color: $color-white;
     background-color: $color-dark-blue;
+    @include responsive(md) {
+        padding: 13px 23px;
+        bottom: 56px;
+        right: 193px;
+    }
 }
 .map__icons--instagram:link,
 .map__icons--instagram:active,
@@ -151,4 +180,9 @@
     padding: 25px 32px;
     color: $color-white;
     background-color: $color-gold-2;
+    @include responsive(md) {
+        padding: 13px 22px;
+        bottom: -8px;
+        right: 125px;
+    }
 }
