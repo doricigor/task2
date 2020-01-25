@@ -6,6 +6,13 @@ footer {
 .footer {
     height: 100%;
 }
+.footer__left {
+    img {
+        @include responsive(md) {
+            width: 100%;
+        }
+    }
+}
 .footer__content {
     padding-top: 158px;
 }
@@ -16,10 +23,16 @@ footer {
     margin-top: 20px;
     max-width: 350px;
     text-align: justify;
+    @include responsive(md) {
+        font-size: 13px;
+    }
 }
 .footer__socialNetworks {
     margin-top: 30px;
     position: relative;
+    @include responsive(md) {
+        margin-top: 20px;
+    }
 }
 .circle {
         width: 35px;
@@ -51,6 +64,9 @@ footer {
 .footer__center {
     margin-top: 17px;
     padding-left: 110px;
+    @include responsive(md) {
+        padding-left: 75px;
+    }
 }
 .footer__heading {
     font-size: 18px;
@@ -99,5 +115,8 @@ footer {
     align-self: center;
     @include responsive(lg) {
         margin-top: 0;
+    }
+    @include responsive(md) {
+        margin-bottom: 2px;
     }
 }

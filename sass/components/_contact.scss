@@ -4,6 +4,9 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    @include responsive(md) {
+        margin-top: 350px;
+    }
 }
 .contact__row {
     @include responsive(md) {
@@ -50,6 +53,9 @@
     line-height: 24px;
     color: $color-gray;
     margin-top: 33px;
+    @include responsive(md) {
+        padding-right: 55px;
+    }
 }
 .contact__info--left {
     list-style: none;

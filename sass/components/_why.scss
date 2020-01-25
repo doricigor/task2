@@ -18,6 +18,9 @@
     max-height: 494px;
     background-color: $color-gold;
     padding: 68px 92px 70px 105px;
+    @include responsive(lg) {
+        padding: 98px 92px 70px 105px;
+    }
     @include responsive(md) {
         padding: 68px 0 70px 66px;
     }
@@ -89,14 +92,14 @@
         top: 217px;
         left: 142px;
         @include responsive(lg) {
-            top: 188px;
+            top: 218px;
             left: 143px;
-            width: 440px;
+            width: 400px;
         }
         @include responsive(md) {
             top: 181px;
             left: 105px;
-            width: 400px;
+            
         }
     }
 }
@@ -105,16 +108,16 @@
 }
 
 // TODO
-@media (max-width: 45em) {
+// @media (max-width: 45em) {
 
-    .why__tabs .tab,
-    .why__tabs label {
-        order: initial;
-    }
+//     .why__tabs .tab,
+//     .why__tabs label {
+//         order: initial;
+//     }
 
-    .why__tabs label {
-        width: 100%;
-        margin-right: 0;
-        margin-top: 2px;
-    }
-}
+//     .why__tabs label {
+//         width: 100%;
+//         margin-right: 0;
+//         margin-top: 2px;
+//     }
+// }

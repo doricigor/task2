@@ -107,6 +107,10 @@ footer {
 .footer {
   height: 100%; }
 
+@media only screen and (max-width: 992px) {
+  .footer__left img {
+    width: 100%; } }
+
 .footer__content {
   padding-top: 158px; }
 
@@ -117,10 +121,16 @@ footer {
   margin-top: 20px;
   max-width: 350px;
   text-align: justify; }
+  @media only screen and (max-width: 992px) {
+    .footer__p {
+      font-size: 13px; } }
 
 .footer__socialNetworks {
   margin-top: 30px;
   position: relative; }
+  @media only screen and (max-width: 992px) {
+    .footer__socialNetworks {
+      margin-top: 20px; } }
 
 .circle {
   width: 35px;
@@ -148,6 +158,9 @@ footer {
 .footer__center {
   margin-top: 17px;
   padding-left: 110px; }
+  @media only screen and (max-width: 992px) {
+    .footer__center {
+      padding-left: 75px; } }
 
 .footer__heading {
   font-size: 18px;
@@ -196,6 +209,9 @@ footer {
   @media only screen and (max-width: 1200px) {
     .footer__right {
       margin-top: 0; } }
+  @media only screen and (max-width: 992px) {
+    .footer__right {
+      margin-bottom: 2px; } }
 
 .copyright {
   color: #ffffff;
@@ -207,6 +223,9 @@ footer {
   font-family: 'Poppins', sans-serif;
   padding: 20px 0;
   font-weight: 100; }
+  @media only screen and (max-width: 1200px) {
+    .copyright {
+      padding: 15px 0; } }
 
 .btn-gold {
   padding: 15px 38px;
@@ -492,10 +511,10 @@ footer {
   padding-bottom: 170px; }
   @media only screen and (max-width: 1200px) {
     .story {
-      padding-top: 60px; } }
+      padding-top: 90px; } }
   @media only screen and (max-width: 992px) {
     .story {
-      padding-top: 10px;
+      padding-top: 80px;
       padding-bottom: 110px; } }
 
 .story__content--right {
@@ -679,14 +698,14 @@ footer {
   border: 1px solid #af943e;
   max-width: 1096px;
   height: 325px; }
+  @media only screen and (max-width: 1200px) {
+    .testimonials__content {
+      padding: 44px 54px;
+      max-width: 950px; } }
   @media only screen and (max-width: 992px) {
     .testimonials__content {
-      padding: 44px 103px;
-      max-width: 980px; } }
-  @media only screen and (max-width: 992px) {
-    .testimonials__content {
-      padding: 44px 83px;
-      max-width: 940px; } }
+      padding: 44px 0;
+      max-width: 830px; } }
 
 .testimonials__quote {
   height: 50px;
@@ -721,6 +740,10 @@ footer {
   font-size: 16px;
   line-height: 30px;
   font-weight: lighter; }
+  @media only screen and (max-width: 992px) {
+    .testimonials__text {
+      font-size: 14px;
+      letter-spacing: .9px; } }
 
 .testimonials__span {
   text-transform: uppercase;
@@ -844,6 +867,9 @@ footer {
   max-height: 494px;
   background-color: #af943e;
   padding: 68px 92px 70px 105px; }
+  @media only screen and (max-width: 1200px) {
+    .why__content {
+      padding: 98px 92px 70px 105px; } }
   @media only screen and (max-width: 992px) {
     .why__content {
       padding: 68px 0 70px 66px; } }
@@ -915,26 +941,16 @@ footer {
     left: 142px; }
     @media only screen and (max-width: 1200px) {
       .why__tabs input[type="radio"]:checked + label::after {
-        top: 188px;
+        top: 218px;
         left: 143px;
-        width: 440px; } }
+        width: 400px; } }
     @media only screen and (max-width: 992px) {
       .why__tabs input[type="radio"]:checked + label::after {
         top: 181px;
-        left: 105px;
-        width: 400px; } }
+        left: 105px; } }
 
 .why__tabs input[type="radio"]:checked + label + .tab {
   display: block; }
-
-@media (max-width: 45em) {
-  .why__tabs .tab,
-  .why__tabs label {
-    order: initial; }
-  .why__tabs label {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 2px; } }
 
 .gallery {
   text-align: center;
@@ -1167,6 +1183,9 @@ footer {
   height: auto;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 992px) {
+    .contact {
+      margin-top: 350px; } }
 
 @media only screen and (max-width: 992px) {
   .contact__row {
@@ -1212,6 +1231,9 @@ footer {
   line-height: 24px;
   color: #666666;
   margin-top: 33px; }
+  @media only screen and (max-width: 992px) {
+    .contact__info {
+      padding-right: 55px; } }
 
 .contact__info--left {
   list-style: none; }

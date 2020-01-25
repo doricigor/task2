@@ -11,14 +11,16 @@
     border: 1px solid $color-gold;
     max-width: 1096px;
     height: 325px;
-    @include responsive(md) {
-        padding: 44px 103px;
-        max-width: 980px;
+    @include responsive(lg) {
+        padding: 44px 54px;
+        max-width: 950px;
     }
     @include responsive(md) {
-        padding: 44px 83px;
-        max-width: 940px;
+        padding: 44px 0;
+        max-width: 830px;
     }
+    
+    
 }
 .testimonials__quote {
     height: 50px;
@@ -52,6 +54,10 @@
     font-size: 16px;
     line-height: 30px;
     font-weight: lighter;
+    @include responsive(md) {
+        font-size: 14px;
+        letter-spacing: .9px;
+    }
 }
 .testimonials__span {
     text-transform: uppercase;
