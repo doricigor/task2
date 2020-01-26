@@ -6,9 +6,12 @@
     line-height: 30px;
     height: 60px;
     font-family: 'Poppins', sans-serif;
-    padding: 20px 0;
+    padding: 23px 0;
     font-weight: 100;
     @include responsive(lg) {
         padding: 15px 0;
+    }
+    @include responsive(ss) {
+        font-size: 11px;
     }
 }

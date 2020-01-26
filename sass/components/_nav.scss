@@ -1,5 +1,8 @@
 .nav__menu {
     margin-bottom: 0;
+    @include responsive(sm) {
+        display: none;
+    }
 }
 .nav__list {
     display: flex;
@@ -28,4 +31,43 @@
     color: $color-dark;
     display: inline-block;
     font-weight: 700;
+    font-size: 16px;
+    @include responsive(md) {
+        font-size: 15px;
+    }
+}
+// Mini Navigation
+.miniNav:link,
+.miniNav:active,
+.miniNav:visited {
+    text-decoration: none;
+    cursor: pointer;
+    height: 3px;
+    width: 50px;
+    background-color: $color-gold;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    @include responsive(sm) {
+        display: block;
+    }
+
+        &::before,
+        &::after {
+            content: '';
+            height: 3px;
+            width: 50px;
+            background-color: $color-gold;
+            display: none;
+            @include responsive(sm) {
+                display: block;
+            }
+        }
+        &::before {
+            transform: translateY(-8px);
+        }
+        &::after {
+            transform: translateY(6px);
+        }
 }

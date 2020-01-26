@@ -23,7 +23,14 @@
     color: $dark-text;
     margin-left: 75px;
     letter-spacing: .2px;
-
+    @include responsive(sm) {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    @include responsive(ss) {
+        margin-left: 10px;
+        font-size: 14px;
+    }
     &:hover {
         color: $dark-text;
         text-decoration: none;
@@ -56,6 +63,17 @@
         padding: 35px 0 25px 95px;
         font-size: 13px;
     }
+    @include responsive(sm) {
+        padding: 5px 0 5px 50px;
+        font-size: 12px;
+        max-width: 75%;
+    }
+    @include responsive(xs) {
+        max-width: 90%;   
+    }
+    @include responsive(ss) {
+        padding: 5px 0 5px 30px;
+    }
 
     // TODO - arrow down
 
@@ -84,6 +102,9 @@
 .question__text  {
     max-width: 924px;
     text-align: justify;
+    @include responsive(ss) {
+        font-size: 11px;
+    }
 }
 .questions {
     margin-top: 60px;
@@ -99,6 +120,9 @@
     text-transform: none;
     margin-left: 40px;
     letter-spacing: 1.5px;
+    @include responsive(ss) {
+        margin-left: 0;
+    }
 
     &::after {
         @include gold-line;

@@ -24,6 +24,13 @@
         right: -10px;
         font-size: 15px;
     }
+    @include responsive(sm) {
+        right: -20px;
+    }
+    @include responsive(xs) {
+        right: 130px;
+        font-size: 13px;
+    }
 }
 .map__content {
     position: relative;
@@ -51,6 +58,18 @@
     @include responsive(md) {
         left: 0;
     }
+    @include responsive(sm) {
+        height: 370px;
+        width: 290px;
+        padding: 20px 20px 10px 20px;
+    }
+    @include responsive(xs) {
+        top: 45px;
+        left: 35px;
+    }
+    @include responsive(ss) {
+        left: 25px;
+    }
 }
 .map__goldSpan {
     color: $color-gold;
@@ -63,11 +82,17 @@
     line-height: 36px;
     margin-top: 18px;
     letter-spacing: .5px;
+    @include responsive(sm) {
+        margin-top: 7px;
+    }
 }
 .map__list {
     list-style: none;
     line-height: 25px;
     margin-top: 24px;
+    @include responsive(sm) {
+        margin-top: 10px;
+    }
 }
 .map__item {
     color: $color-gray-2;
@@ -86,24 +111,39 @@
         bottom: -183px;
     }
     @include responsive(md) {
-        right: -90px;
+        width: 300px;
+        right: 60px;
+    }
+    @include responsive(xs) {
+        bottom: -247px;
+        right: 217px;
+    }
+    @include responsive(ss) {
+        right: 140px;
     }
 }
 .map__icons {
     font-size: 25px;
+    @include responsive(sm) {
+        font-size: 20px;
+    }
 }
 .map__icons--mail:link,
 .map__icons--mail:active,
 .map__icons--mail:visited {
     position: absolute;
-    top: -1px;
-    left: 1px;
+    top: 0;
+    left: 0;
     border: 1px solid transparent;
-    padding: 70px 73px;
+    padding: 70px 76px;
     color: $color-white;
     background-color: $color-dark-blue;
     @include responsive(md) {
         padding: 43px 49px;
+    }
+    @include responsive(sm) {
+        padding: 31px 42px;
+        left: 110px;
     }
 }
 .map__icons--linkedin:link,
@@ -121,6 +161,11 @@
         bottom: -9px;
         left: 125px;
     }
+    @include responsive(sm) {
+        padding: 7px 16px;
+        bottom: 44px;
+        left: 216px;
+    }
 }
 .map__icons--mailxs:link,
 .map__icons--mailxs:active,
@@ -134,8 +179,17 @@
     background-color: $color-gold-2;
     @include responsive(md) {
         padding: 13px 20px;
-        top: -66px;
-        right: 190px;
+        top: -67px;
+        right: 41px;
+    }
+    @include responsive(sm) {
+        padding: 8px 15px;
+        top: -49px;
+        right: -20px;
+    }
+    @include responsive(xs) {
+        top: -46px;
+        right: -21px;
     }
 }
 .map__icons--twitter:link,
@@ -150,8 +204,12 @@
     left: 179px;
     @include responsive(md) {
         padding: 13px 20px;
-        top: -3px;
+        top: 0;
         left: 126px;
+    }
+    @include responsive(sm) {
+        padding: 7px 15px;
+        left: 216px;
     }
 }
 .map__icons--facebook:link,
@@ -165,9 +223,18 @@
     color: $color-white;
     background-color: $color-dark-blue;
     @include responsive(md) {
-        padding: 13px 23px;
-        bottom: 56px;
-        right: 193px;
+        padding: 11px 23px;
+        bottom: 55px;
+        right: 43px;
+    }
+    @include responsive(sm) {
+        padding: 7px 18px;
+        bottom: 90px;
+        right: -18px;
+    }
+    @include responsive(xs) {
+        right: -21px;
+        padding: 7px 19px;
     }
 }
 .map__icons--instagram:link,
@@ -181,8 +248,13 @@
     color: $color-white;
     background-color: $color-gold-2;
     @include responsive(md) {
-        padding: 13px 22px;
-        bottom: -8px;
-        right: 125px;
+        padding: 11px 22px;
+        bottom: -6px;
+        right: -25px;
+    }
+    @include responsive(sm) {
+        padding: 7px 15px;
+        bottom: 44px;
+        right: -67px;
     }
 }

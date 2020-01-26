@@ -25,11 +25,11 @@ lg small-pc  - 1200px
 */
 
 @mixin responsive ($breakpoint) {
-    @if $breakpoint == s {
-        @media only screen and (max-width: 576px) { @content }; 
+    @if $breakpoint == ss {
+        @media only screen and (max-width: 450px) { @content }; 
     }
     @if $breakpoint == xs {
-        @media only screen and (max-width: 640px) { @content }; 
+        @media only screen and (max-width: 576px) { @content }; 
     }
     @if $breakpoint == sm {
         @media only screen and (max-width: 768px) { @content }; 

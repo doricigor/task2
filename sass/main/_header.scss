@@ -2,11 +2,13 @@
     background-color: $color-dark;
     height: 40px;
     width: 100%;
-
 }
 
 .header__bottom {
     height: 120px;
+    @include responsive(sm) {
+        height: 80px;
+    }
 }
 
 .header__content {
@@ -14,17 +16,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.header__logo {
+    @include responsive(md) {
+        width: 30%;
+    }
+    @include responsive(sm) {
+        width: 33%;
+    }
+    @include responsive(ss) {
+        width: 50%;
+    }
+    img {
+        @include responsive(md) {
+            width: 100%;
+        }
+    }
 }
 
 .header__span {
     font-size: 12px;
     color: $color-white;
     font-family: 'Poppins', sans-serif;
+    @include responsive(xs) {
+        font-size: 10px;
+    }
 }
 .header__top--left {
     span {
         &:not(:last-child) {
             margin-right: 43px;
+            @include responsive(xs) {
+                margin-right: 10px;
+            }
         }
     }
 }
@@ -38,6 +63,9 @@
 .header__link:link {
     font-size: 14px;
     color: $color-white;
+    @include responsive(xs) {
+        font-size: 12px;
+    }
 
     &:hover {
         color: $color-gold;
@@ -48,6 +76,9 @@
     &:visited,
     &:link {
         margin-right: 10px;
+        @include responsive(xs) {
+            margin-right: 5px;
+        }
     }
 }
 .header__link--right {

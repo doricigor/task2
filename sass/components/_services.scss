@@ -2,7 +2,14 @@
     padding: 100px 0;
     text-align: center;
     @include responsive(md) {
-        margin-top: 270px;
+        margin-top: 190px;
+    }
+    @include responsive(sm) {
+        margin-top: 10px;
+    }
+    @include responsive(xs) {
+        margin-top: 0;
+        padding: 65px 0;
     }
 }
 .services__heading {
@@ -39,6 +46,14 @@
             margin: 15px auto;
             width: 259px;
         }
+        @include responsive(sm) {
+            width: 230px;
+        }
+        @include responsive(xs) {
+            width: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
     &--2 {
         background-image: url(../img/services/services2.jpg);
@@ -50,6 +65,14 @@
         @include responsive(md) {
             margin: 15px auto;
             width: 259px;
+        }
+        @include responsive(sm) {
+            width: 230px;
+        }
+        @include responsive(xs) {
+            width: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
     &--3 {
@@ -63,6 +86,14 @@
             margin: 15px auto;
             width: 259px;
         }
+        @include responsive(sm) {
+            width: 230px;
+        }
+        @include responsive(xs) {
+            width: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
     &--4 {
         background-image: url(../img/services/services4.jpg);
@@ -74,6 +105,14 @@
         @include responsive(md) {
             margin: 15px auto;
             width: 259px;
+        }
+        @include responsive(sm) {
+            width: 230px;
+        }
+        @include responsive(xs) {
+            width: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }

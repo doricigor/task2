@@ -5,6 +5,13 @@
     padding-bottom: 100px;
     margin-top: 1px;
     position: relative;
+    @include responsive(sm) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include responsive(ss) {
+        padding-top: 43px;
+    }
 }
 .testimonials__content {
     padding: 44px 125px;
@@ -19,8 +26,6 @@
         padding: 44px 0;
         max-width: 830px;
     }
-    
-    
 }
 .testimonials__quote {
     height: 50px;
@@ -34,10 +39,16 @@
     transform: translateX(-50%);
     z-index: 2;
     font-family: initial;
+    @include responsive(sm) {
+        top: 13px;
+    }
 }
 .testimonials__heading {
     color: $color-white;
     padding-bottom: 11px;
+    @include responsive(ss) {
+        padding-bottom: 0;
+    }
 
     &::after {
         @include gold-line;
@@ -58,6 +69,9 @@
         font-size: 14px;
         letter-spacing: .9px;
     }
+    @include responsive(ss) {
+        font-size: 11px;
+    }
 }
 .testimonials__span {
     text-transform: uppercase;
@@ -65,4 +79,7 @@
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
+    @include responsive(ss) {
+        font-size: 11px;
+    }
 }

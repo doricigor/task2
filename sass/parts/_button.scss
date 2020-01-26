@@ -40,6 +40,10 @@
         color: $color-white;
         background-color: $color-black;
     }
+    @include responsive(sm) {
+        margin-top: 15px;
+        padding: 13px 20px;
+    }
 }
 .gold-card__btn {
     text-transform: uppercase;
@@ -64,5 +68,13 @@
     }
     @include responsive(md) {
         padding: 11px 20px;
+    }
+    @include responsive(sm) {
+        margin-left: 0;
+        padding: 11px 32px;
+    }
+    @include responsive(ss) {
+        font-size: 12px;
+        padding: 8px 20px;
     }
 }

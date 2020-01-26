@@ -10,7 +10,9 @@
         padding-top: 80px;
         padding-bottom: 110px;
     }
-    
+    @include responsive(sm) {
+        padding-bottom: 90px;
+    }
 }
 .story__content--right {
     display: flex;
@@ -31,6 +33,9 @@
         }
         @include responsive(md) {
             width: 100%;
+        }
+        @include responsive(xs) {
+            width: 97%;
         }
     }
 
@@ -53,6 +58,21 @@
             right: 6px;
             top: 17px;
             height: 73%;
+        }
+        @include responsive(sm) {
+            width: 500px;
+            height: 100%;
+            right: -6px;
+            top: 23px;
+        }
+        @include responsive(xs) {
+            width: 513px;
+            right: 7px;
+        }
+        @include responsive(ss) {
+            width: 85%;
+            right: 8px;
+            height: 97%;
         }
     }
 }
