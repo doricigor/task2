@@ -42,9 +42,6 @@
         font-size: 14px;
         margin-top: 0;
     }
-    @include responsive(sm) {
-        margin-top: 230px;
-    }
     @include responsive(ss) {
         font-size: 12px;
         margin: 0;

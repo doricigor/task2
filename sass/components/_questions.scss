@@ -1,6 +1,15 @@
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
-
 .accordion-toggle::before {
+    font-family: 'FontAwesome';
+    content: "\f107";
+    float: left;
+    margin-left: 80px;
+    color: $color-gold;
+    @include responsive(md) {
+        margin-left: 10px;
+    }
+}
+.collapsed::before {
     font-family: 'FontAwesome';
     content: "\f105";
     float: left;
@@ -9,13 +18,6 @@
     @include responsive(md) {
         margin-left: 10px;
     }
-}
-.accordion-opened .accordion-toggle::before {
-    font-family: 'FontAwesome';
-    content: "\f107";
-    float: left;
-    margin-left: 80px;
-    color: $color-gold;
 }
 .accordion-toggle {
     font-size: 25px;
@@ -75,8 +77,6 @@
         padding: 5px 0 5px 30px;
     }
 
-    // TODO - arrow down
-
     &::before {
         content: '';
         background-color: $color-gold;
@@ -84,9 +84,9 @@
         width: 2px;
         position: absolute;
         top: -21px;
-        left: 83px;
+        left: 86px;
         @include responsive(md) {
-            left: 12px;
+            left: 13px;
         }
     }
     &::after {

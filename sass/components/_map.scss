@@ -31,6 +31,9 @@
         right: 130px;
         font-size: 13px;
     }
+    @media only screen and (max-width: 390px) {
+        right: 80px;
+    }; 
 }
 .map__content {
     position: relative;
@@ -121,6 +124,9 @@
     @include responsive(ss) {
         right: 140px;
     }
+    @media only screen and (max-width: 390px) {
+        right: 110px;
+    }; 
 }
 .map__icons {
     font-size: 25px;
@@ -132,7 +138,7 @@
 .map__icons--mail:active,
 .map__icons--mail:visited {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     border: 1px solid transparent;
     padding: 70px 76px;

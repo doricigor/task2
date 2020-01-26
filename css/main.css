@@ -70,6 +70,9 @@ html {
   background-color: #2e2e2f;
   height: 40px;
   width: 100%; }
+  @media only screen and (max-width: 390px) {
+    .header__top {
+      height: 50px; } }
 
 .header__bottom {
   height: 120px; }
@@ -83,6 +86,12 @@ html {
   justify-content: space-between;
   align-items: center;
   position: relative; }
+
+@media only screen and (max-width: 390px) {
+  .miniTop {
+    display: flex;
+    flex-direction: column;
+    padding: 1px; } }
 
 @media only screen and (max-width: 992px) {
   .header__logo {
@@ -100,18 +109,18 @@ html {
   .header__logo img {
     width: 100%; } }
 
-.header__span {
+.header__span, .header__span:link, .header__span:active, .header__span:visited {
   font-size: 12px;
   color: #ffffff;
   font-family: 'Poppins', sans-serif; }
   @media only screen and (max-width: 576px) {
-    .header__span {
+    .header__span, .header__span:link, .header__span:active, .header__span:visited {
       font-size: 10px; } }
 
-.header__top--left span:not(:last-child) {
+.header__top--left .header__span:not(:last-child) {
   margin-right: 43px; }
   @media only screen and (max-width: 576px) {
-    .header__top--left span:not(:last-child) {
+    .header__top--left .header__span:not(:last-child) {
       margin-right: 10px; } }
 
 .header__top--right span {
@@ -1056,7 +1065,7 @@ footer {
 
 .accordion-toggle::before {
   font-family: 'FontAwesome';
-  content: "\f105";
+  content: "\f107";
   float: left;
   margin-left: 80px;
   color: #af943e; }
@@ -1064,12 +1073,15 @@ footer {
     .accordion-toggle::before {
       margin-left: 10px; } }
 
-.accordion-opened .accordion-toggle::before {
+.collapsed::before {
   font-family: 'FontAwesome';
-  content: "\f107";
+  content: "\f105";
   float: left;
   margin-left: 80px;
   color: #af943e; }
+  @media only screen and (max-width: 992px) {
+    .collapsed::before {
+      margin-left: 10px; } }
 
 .accordion-toggle {
   font-size: 25px;
@@ -1132,10 +1144,10 @@ footer {
     width: 2px;
     position: absolute;
     top: -21px;
-    left: 83px; }
+    left: 86px; }
     @media only screen and (max-width: 992px) {
       .accordion-inner::before {
-        left: 12px; } }
+        left: 13px; } }
   .accordion-inner::after {
     content: '';
     position: absolute;
@@ -1210,7 +1222,7 @@ footer {
       transform: translateY(0); } }
   @media only screen and (max-width: 450px) {
     .why__container {
-      height: 650px; } }
+      height: 600px; } }
 
 .why__content {
   max-height: 494px;
@@ -1401,6 +1413,9 @@ footer {
     .google {
       right: 130px;
       font-size: 13px; } }
+  @media only screen and (max-width: 390px) {
+    .google {
+      right: 80px; } }
 
 .map__content {
   position: relative;
@@ -1488,6 +1503,9 @@ footer {
   @media only screen and (max-width: 450px) {
     .map__social {
       right: 140px; } }
+  @media only screen and (max-width: 390px) {
+    .map__social {
+      right: 110px; } }
 
 .map__icons {
   font-size: 25px; }
@@ -1499,7 +1517,7 @@ footer {
 .map__icons--mail:active,
 .map__icons--mail:visited {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   border: 1px solid transparent;
   padding: 70px 76px;
@@ -1912,9 +1930,6 @@ footer {
     .gold-card__text {
       font-size: 14px;
       margin-top: 0; } }
-  @media only screen and (max-width: 768px) {
-    .gold-card__text {
-      margin-top: 230px; } }
   @media only screen and (max-width: 450px) {
     .gold-card__text {
       font-size: 12px;
