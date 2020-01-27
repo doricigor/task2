@@ -3,37 +3,50 @@
     width: 100%;
     padding-top: 145px;
     padding-bottom: 170px;
+
     @include responsive(lg) {
         padding-top: 90px;
     }
+
     @include responsive(md) {
         padding-top: 80px;
         padding-bottom: 110px;
     }
+
     @include responsive(sm) {
         padding-bottom: 90px;
     }
+
+    @include responsive(xs) {
+        padding-bottom: 30px;
+    }
 }
+
 .story__content--right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
     padding-top: 55px;
+
     @include responsive(md) {
         padding-left: 15px;
     }
 }
+
 .story__img {
     position: relative;
     z-index: 5;
+
     img {
         @include responsive(lg) {
             width: 95%;
         }
+
         @include responsive(md) {
             width: 100%;
         }
+
         @include responsive(xs) {
             width: 97%;
         }
@@ -53,29 +66,35 @@
             width: 420px;
             right: 19px;
         }
+
         @include responsive(md) {
             width: 314px;
             right: 6px;
             top: 17px;
             height: 73%;
         }
+
         @include responsive(sm) {
             width: 500px;
             height: 100%;
             right: -6px;
             top: 23px;
         }
+
         @include responsive(xs) {
             width: 513px;
             right: 7px;
         }
+
         @include responsive(ss) {
-            width: 85%;
+            width: 88%;
             right: 8px;
-            height: 97%;
+            height: 98%;
+            top: 26px;
         }
     }
 }
+
 .story__heading {
     margin-top: 31px;
 
@@ -86,22 +105,26 @@
         margin-bottom: 4px;
     }
 }
+
 .story__subhead {
     font-family: 'Merriweather', serif;
     font-size: 16px;
     color: $color-gray;
     margin-top: 10px;
     letter-spacing: .1px;
+
     @include responsive(md) {
         font-size: 15px;
     }
 }
+
 .story__text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: $color-gray;
     line-height: 24px;
     margin-bottom: 20px;
+
     @include responsive(md) {
         font-size: 12px;
     }

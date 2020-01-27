@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 62px;
 }
+
 .gallery__heading {
     &::after {
         @include gold-line;
@@ -9,30 +10,36 @@
         width: 40px;
     }
 }
+
 .gallery__images {
     margin-top: 55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     img {
         margin-bottom: 23px;
         height: 300px;
         width: 300px;
+
         @include responsive(lg) {
             height: 250px;
             width: 250px;
         }
+
         @include responsive(sm) {
             height: 180px;
             width: 180px;
         }
+
         @include responsive(xs) {
             height: 135px;
             width: 135px;
         }
-        
+
     }
+
     @include responsive(md) {
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }
