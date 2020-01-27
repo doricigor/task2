@@ -115,7 +115,8 @@ html {
   font-family: 'Poppins', sans-serif; }
   @media only screen and (max-width: 576px) {
     .header__span, .header__span:link, .header__span:active, .header__span:visited {
-      font-size: 10px; } }
+      font-size: 10px;
+      text-decoration: none; } }
 
 .header__top--left .header__span:not(:last-child) {
   margin-right: 43px; }
