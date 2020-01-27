@@ -1,16 +1,20 @@
 .nav__menu {
     margin-bottom: 0;
+
     @include responsive(sm) {
         display: none;
     }
 }
+
 .nav__list {
     display: flex;
     position: relative;
 }
+
 .nav__item {
     list-style: none;
     margin-top: 21px;
+
     a:hover {
         &::after {
             @include gold-line;
@@ -20,10 +24,12 @@
             top: 59px;
         }
     }
+
     &:not(:last-child) {
         margin-right: 35px;
     }
 }
+
 .nav__link:link,
 .nav__link:visited {
     text-decoration: none;
@@ -32,42 +38,100 @@
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
+
     @include responsive(md) {
         font-size: 15px;
     }
 }
+
 // Mini Navigation
-.miniNav:link,
-.miniNav:active,
-.miniNav:visited {
-    text-decoration: none;
-    cursor: pointer;
-    height: 3px;
+.miniNav {
+    height: 50px;
     width: 50px;
-    background-color: $color-gold;
-    display: none;
+    cursor: pointer;
+    background-color: $color-dark;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     right: 15px;
+    display: none;
+    border-radius: 5px;
+
     @include responsive(sm) {
         display: block;
     }
 
+    &:hover {
+        .menu::before {
+            transform: translateY(-10px);
+        }
+
+        .menu::after {
+            transform: translateY(8px);
+        }
+    }
+
+    .menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+        height: 2px;
+        width: 35px;
+        background-color: $color-gold;
+
         &::before,
         &::after {
             content: '';
-            height: 3px;
-            width: 50px;
+            height: 2px;
+            width: 35px;
             background-color: $color-gold;
-            display: none;
-            @include responsive(sm) {
-                display: block;
-            }
+            display: block;
         }
+
         &::before {
-            transform: translateY(-8px);
+            transform: translateY(-7px);
         }
+
         &::after {
-            transform: translateY(6px);
+            transform: translateY(5px);
         }
+    }
+}
+
+.miniNav__menu {
+    height: auto;
+    width: 200px;
+    background-color: $color-dark;
+    color: $color-gold;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px 0;
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.miniNav__item {
+    list-style: none;
+    padding: 7px 5px;
+}
+
+.miniNav__link:link,
+.miniNav__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-gold;
+    display: inline-block;
+    font-size: 16px;
+
+    &:hover {
+        border-bottom: 1px solid $color-gold;
+    }
 }
