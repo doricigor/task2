@@ -19,10 +19,6 @@
         max-height: 400px;
     }
 
-    @include responsive(md) {
-        padding-top: 20px;
-    }
-
     @include responsive(sm) {
         padding-top: 0;
         max-height: 100%;
@@ -184,7 +180,6 @@
 }
 
 .box__heading {
-    color: $color-white;
     padding-bottom: 20px;
     text-transform: capitalize;
     line-height: 48px;
@@ -200,7 +195,6 @@
 }
 
 .box__heading--2 {
-    color: $color-white;
     padding-bottom: 36px;
 
     @include responsive(sm) {
@@ -214,10 +208,6 @@
     @include responsive(ss) {
         padding-bottom: 15px;
     }
-}
-
-.box__heading--1 {
-    color: $color-dark;
 }
 
 .box__left--1 {

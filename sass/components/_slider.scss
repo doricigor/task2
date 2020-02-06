@@ -9,6 +9,8 @@
         background-image: url("../img/cover.jpg");
         background-position: right;
         background-size: cover;
+        outline: none;
+
         @include responsive(md) {
             height: 700px;
         }
@@ -59,6 +61,7 @@
         position: relative;
         width: 100%;
         height: auto;
+        outline: none;
     }
     .slick-dots {
         display: flex;
@@ -68,9 +71,12 @@
         left: 50.5%;
         transform: translateX(-59%);
         list-style-type: none;
-        @include responsive(ss) {
-            bottom: 8px;
+
+        @include responsive(sm) {
+            bottom: 0;
         }
+
+       
 
         button {
             display: block;

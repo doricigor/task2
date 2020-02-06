@@ -1,13 +1,12 @@
+
 .header__top {
     background-color: $color-dark;
     height: 40px;
     width: 100%;
 
-    @media only screen and (max-width: 390px) {
+    @include responsive(xs) {
         height: 50px;
     }
-
-    ;
 }
 
 .header__bottom {
@@ -24,16 +23,20 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
 }
 
 .miniTop {
+
+    @include responsive(xs) {
+        flex-direction: column;
+    }
+
     @media only screen and (max-width: 390px) {
         display: flex;
         flex-direction: column;
         padding: 1px;
     }
-
-    ;
 }
 
 .header__logo {
@@ -56,39 +59,41 @@
     }
 }
 
-.header__span {
+.header__topList {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+.header__topItem {
+    padding: 0 5px;
+}
 
-    &,
-    &:link,
-    &:active,
-    &:visited {
+.header__info {
+    margin-right: 35px;
+
+    @include responsive(xs) {
+        margin-right: 0;
+    }
+}
+
+.header__phone {
+    &::before {
+        content: '\f879';
         font-size: 12px;
         color: $color-white;
-        font-family: 'Poppins', sans-serif;
-
-        @include responsive(xs) {
-            font-size: 10px;
-            text-decoration: none;
-        }
-    }
-
-}
-
-.header__top--left {
-    .header__span {
-        &:not(:last-child) {
-            margin-right: 43px;
-
-            @include responsive(xs) {
-                margin-right: 10px;
-            }
-        }
+        font-family: $icons;
+        font-weight: 900;
+        margin-right: 10px;
     }
 }
-
-.header__top--right {
-    span {
-        margin-right: 12px;
+.header__mail {
+    &::before {
+        content: '\f0e0';
+        font-size: 14px;
+        color: $color-white;
+        font-family: $icons;
+        font-weight: 900;
+        margin-right: 10px;
     }
 }
 
@@ -96,34 +101,110 @@
 .header__link:link {
     font-size: 14px;
     color: $color-white;
+    transition: .2s ease;
+    text-decoration: none;
 
     @include responsive(xs) {
         font-size: 12px;
     }
 
     &:hover {
-        color: $color-gold;
-    }
-}
-
-.header__link--left {
-
-    &:visited,
-    &:link {
-        margin-right: 10px;
-
-        @include responsive(xs) {
-            margin-right: 5px;
+        &::before {
+            color: $color-gold;
         }
     }
 }
 
 .header__link--right {
-
-    &:visited,
-    &:link {
-        &:not(:last-child) {
-            margin-right: 19px;
-        }
+    transition: .2s ease;
+    &:hover {
+        color: $color-gold;
     }
 }
+
+.header__top--right {
+    display: flex;
+}
+
+.header__social {
+    margin-left: 8px;
+}
+
+.header__follow {
+    color: $color-white;
+    font-size: 14px;
+    margin-right: 5px;
+    padding-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header__span {
+
+//     &,
+//     &:link,
+//     &:active,
+//     &:visited {
+//         font-size: 12px;
+//         color: $color-white;
+//         font-family: 'Poppins', sans-serif;
+
+//         @include responsive(xs) {
+//             font-size: 10px;
+//             text-decoration: none;
+//         }
+//     }
+
+// }
+
+// .header__top--left {
+//     .header__span {
+//         &:not(:last-child) {
+//             margin-right: 43px;
+
+//             @include responsive(xs) {
+//                 margin-right: 10px;
+//             }
+//         }
+//     }
+// }
+
+// .header__top--right {
+//     span {
+//         margin-right: 12px;
+//     }
+// }
+
+
+
+// .header__link--left {
+
+//     &:visited,
+//     &:link {
+//         margin-right: 10px;
+
+//         @include responsive(xs) {
+//             margin-right: 5px;
+//         }
+//     }
+// }
+
+// .header__link--right {
+
+//     &:visited,
+//     &:link {
+//         &:not(:last-child) {
+//             margin-right: 19px;
+//         }
+//     }
+// }

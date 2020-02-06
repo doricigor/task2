@@ -7,9 +7,16 @@
     position: relative;
     clear: both;
 
+    @include responsive(md) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     @include responsive(sm) {
         padding-top: 50px;
         padding-bottom: 50px;
+        // padding-left: 35px;
+        // padding-right: 35px;
     }
 
     @include responsive(ss) {
@@ -32,6 +39,20 @@
         padding: 44px 0;
         max-width: 830px;
     }
+
+    @include responsive(sm) {
+        height: auto;
+    }
+}
+
+.testimonials__slide {
+    @include responsive(md) {
+        padding: 0 50px;
+    }
+
+    @include responsive(xs) {
+        padding: 0 20px;
+    }
 }
 
 .testimonials__quote {
@@ -53,7 +74,6 @@
 }
 
 .testimonials__heading {
-    color: $color-white;
     padding-bottom: 11px;
 
     @include responsive(ss) {

@@ -1,16 +1,13 @@
 .map {
-    background-image: url(../img/map.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    height: 465px;
+    height: 480px;
     margin-top: 50px;
     position: relative;
 }
 .google {
     position: absolute;
     right: -87px;
-    bottom: -1px;
+    bottom: 15px;
     font-family: myriad-pro, sans-serif;
     font-size: 18px;
     color: $color-gray-2;
@@ -39,7 +36,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-
+    top: -474px;
 }
 // BOX - left side
 .map__box {
@@ -107,7 +104,7 @@
     height: 181px;
     width: 450px;
     position: absolute;
-    bottom: -186px;
+    bottom: -173px;
     right: 55px;
     @include responsive(lg) {
         right: 69px;

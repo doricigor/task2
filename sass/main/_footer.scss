@@ -57,6 +57,7 @@ footer {
         margin-right: 6px;
         font-weight: 700;
         color: $color-white;
+        transition: .2s ease;
 
         &:hover {
             background-color: $color-gold;

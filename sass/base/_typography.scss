@@ -22,3 +22,14 @@
         font-size: 20px;
     }
 }
+
+.heading-2--dark {
+    color: $heading-dark;
+}
+.heading-2--white {
+    color: $color-white;
+}
+
+// Fonts:
+$popins: 'Poppins', sans-serif;
+$icons: "Font Awesome 5 Pro";

@@ -38,6 +38,9 @@
         text-decoration: none;
     }
 }
+.show {
+    margin-top: 50px;
+}
 .accordion-group {
     padding: 10px 0;
 }
@@ -50,7 +53,6 @@
     font-family: 'Poppins', sans-serif;
     color: $color-gray;
     max-width: 57.5%;
-    // At home need padding-bottom 68px, in office 48px
     padding: 48px 0 35px 168px; 
     margin-top: 52px;
     margin-bottom: 13px;
@@ -66,7 +68,7 @@
         font-size: 13px;
     }
     @include responsive(sm) {
-        padding: 5px 0 5px 50px;
+        padding: 10px 10px 10px 50px;
         font-size: 12px;
         max-width: 75%;
     }
@@ -102,6 +104,7 @@
 .question__text  {
     max-width: 924px;
     text-align: justify;
+
     @include responsive(ss) {
         font-size: 11px;
     }

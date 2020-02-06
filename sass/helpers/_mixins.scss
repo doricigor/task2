@@ -17,41 +17,30 @@
     @if $breakpoint==ss {
         @media only screen and (max-width: 450px) {
             @content
-        }
-
-        ;
+        };
     }
 
     @if $breakpoint==xs {
         @media only screen and (max-width: 576px) {
             @content
-        }
-
-        ;
+        };
     }
 
     @if $breakpoint==sm {
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
             @content
-        }
-
-        ;
+        };
     }
 
     @if $breakpoint==md {
         @media only screen and (max-width: 992px) {
             @content
-        }
-
-        ;
+        };
     }
 
     @if $breakpoint==lg {
         @media only screen and (max-width: 1200px) {
             @content
-        }
-
-        ;
+        };
     }
-
 }

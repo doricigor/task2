@@ -14,7 +14,7 @@
     }
 
     @include responsive(sm) {
-        padding-bottom: 90px;
+        padding-bottom: 40px;
     }
 
     @include responsive(xs) {
@@ -31,6 +31,11 @@
 
     @include responsive(md) {
         padding-left: 15px;
+        padding-top: 0;
+    }
+
+    @include responsive(sm) {
+        margin-top: 60px;
     }
 }
 
@@ -68,21 +73,21 @@
         }
 
         @include responsive(md) {
-            width: 314px;
+            width: 90%;
             right: 6px;
             top: 17px;
-            height: 73%;
+            height: 90%;
         }
 
         @include responsive(sm) {
-            width: 500px;
+            
             height: 100%;
             right: -6px;
             top: 23px;
         }
 
         @include responsive(xs) {
-            width: 513px;
+            
             right: 7px;
         }
 
@@ -97,6 +102,10 @@
 
 .story__heading {
     margin-top: 31px;
+
+    @include responsive(md) {
+        margin-top: 0;
+    }
 
     &::after {
         @include gold-line;

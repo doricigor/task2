@@ -15,13 +15,20 @@
     list-style: none;
     margin-top: 21px;
 
-    a:hover {
+    &::after {
+        @include gold-line;
+        width: 1px;
+        margin-left: 5px;
+        position: absolute;
+        top: 59px;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    &:hover {
         &::after {
-            @include gold-line;
+            opacity: 1;
             width: 36px;
-            margin-left: 5px;
-            position: absolute;
-            top: 59px;
         }
     }
 
@@ -46,10 +53,9 @@
 
 // Mini Navigation
 .miniNav {
-    height: 50px;
-    width: 50px;
+    min-width: 50px;
+    min-height: 50px;
     cursor: pointer;
-    background-color: $color-dark;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -101,26 +107,31 @@
 }
 
 .miniNav__menu {
-    height: auto;
-    width: 200px;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 12;
     background-color: $color-dark;
     color: $color-gold;
-    position: absolute;
-    top: 45px;
-    right: 0;
+    position: fixed;
     padding: 10px;
     text-align: center;
-    border-radius: 20px 0;
-    display: none;
+    transform: scale(0);
+    transition: .5s ease;
 }
 
-.d-block {
-    display: block;
+.showMenu {
+    transform: scale(1);
+}
+
+.miniNav__list {
+    margin-top: 200px;
 }
 
 .miniNav__item {
     list-style: none;
-    padding: 7px 5px;
+    padding: 25px 5px;
 }
 
 .miniNav__link:link,
@@ -129,9 +140,23 @@
     text-transform: uppercase;
     color: $color-gold;
     display: inline-block;
-    font-size: 16px;
+    font-size: 22px;
 
     &:hover {
         border-bottom: 1px solid $color-gold;
+    }
+}
+
+.closeMenu {
+    &::before {
+        content: '\f00d';
+        font-size: 30px;
+        color: $color-gold;
+        font-family: $icons;
+        font-weight: 900;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        cursor: pointer;
     }
 }
