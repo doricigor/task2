@@ -89,7 +89,6 @@
     @include responsive(ss) {
         margin-top: 0;
     }
-
 }
 
 .tabs-nav li {
@@ -105,7 +104,6 @@
     @include responsive(sm) {
         padding: 10px 20px 10px 20px;
     }
-
         a {
             &,
             &:link,
@@ -115,7 +113,11 @@
                 color: $color-white;
                 padding-bottom: 10px;
             }
-        }
+    }
+
+    @include responsive(ss) {
+        padding: 10px 15px 10px 15px;
+    }
 }
 .tab-active {
     border-bottom: 3px solid $color-white;

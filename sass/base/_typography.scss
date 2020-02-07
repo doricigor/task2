@@ -15,9 +15,11 @@
     @include responsive(md) {
         font-size: 30px;
     }
+
     @include responsive(xs) {
         font-size: 25px;
     }
+    
     @include responsive(ss) {
         font-size: 20px;
     }

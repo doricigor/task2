@@ -2,6 +2,7 @@ footer {
     background-color: $color-dark-2;
     height: 500px;
     font-family: 'Poppins', sans-serif;
+
     @include responsive(sm) {
         height: auto;
     }
@@ -26,6 +27,10 @@ footer {
 }
 .footer__content {
     padding-top: 162px;
+
+    @include responsive(ss) {
+        padding-top: 105px;
+    }
 }
 .footer__p {
     color: $color-gray-3;
@@ -34,6 +39,7 @@ footer {
     margin-top: 20px;
     max-width: 350px;
     text-align: justify;
+
     @include responsive(md) {
         font-size: 13px;
     }
@@ -41,6 +47,7 @@ footer {
 .footer__socialNetworks {
     margin-top: 30px;
     position: relative;
+
     @include responsive(md) {
         margin-top: 20px;
     }
@@ -76,10 +83,12 @@ footer {
 .footer__center {
     margin-top: 13px;
     padding-left: 110px;
+
     @include responsive(md) {
         padding-left: 75px;
         margin-top: 15px;
     }
+
     @include responsive(sm) {
         display: flex;
         flex-direction: column;
@@ -97,6 +106,7 @@ footer {
         @include gold-line;
         width: 40px;
         margin: 14px 0;
+
         @include responsive(sm) {
             margin: 14px auto;
         }
@@ -135,12 +145,15 @@ footer {
 .footer__right {
     margin-top: 13px;
     align-self: center;
+
     @include responsive(lg) {
         margin-top: 0;
     }
+
     @include responsive(md) {
         margin-bottom: 2px;
     }
+    
     @include responsive(sm) {
         display: flex;
         flex-direction: column;

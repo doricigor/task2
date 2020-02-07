@@ -4,8 +4,8 @@
 }
 .clients__heading {
     line-height: 33px;
-    &::after {
 
+    &::after {
         @include gold-line;
         width: 40px;
         margin: 20px auto 18px auto;
@@ -17,6 +17,7 @@
     letter-spacing: 1.3px;
 }
 .clients__card {
+
     @include responsive(sm) {
         padding: 20px 0;
     }
@@ -24,9 +25,11 @@
 .clients__cards--1 {
     margin-top: 128px;
     align-items: center;
+
     @include responsive(md) {
         margin-top: 90px;
     }
+
     @include responsive(sm) {
         margin-top: 50px;
     }
@@ -34,6 +37,7 @@
 .clients__cards--2 {
     margin-top: 97px;
     align-items: center;
+
     @include responsive(sm) {
         margin-top: 20px;
     }

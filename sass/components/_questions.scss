@@ -5,6 +5,7 @@
     float: left;
     margin-left: 80px;
     color: $color-gold;
+    
     @include responsive(md) {
         margin-left: 10px;
     }
@@ -15,6 +16,7 @@
     float: left;
     margin-left: 80px;
     color: $color-gold;
+
     @include responsive(md) {
         margin-left: 10px;
     }
@@ -25,10 +27,12 @@
     color: $dark-text;
     margin-left: 75px;
     letter-spacing: .2px;
+
     @include responsive(sm) {
         margin-left: 30px;
         font-size: 20px;
     }
+
     @include responsive(ss) {
         margin-left: 10px;
         font-size: 14px;
@@ -63,18 +67,22 @@
     @include responsive(lg) {
         max-width: 80%;
     }
+
     @include responsive(md) {
         padding: 35px 0 25px 95px;
         font-size: 13px;
     }
+
     @include responsive(sm) {
         padding: 10px 10px 10px 50px;
         font-size: 12px;
         max-width: 75%;
     }
+
     @include responsive(xs) {
         max-width: 90%;   
     }
+
     @include responsive(ss) {
         padding: 5px 0 5px 30px;
     }

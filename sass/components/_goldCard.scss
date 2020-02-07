@@ -2,6 +2,7 @@
     padding: 0 15px;
     margin-top: 162px;
     position: relative;
+
     @include responsive(sm) {
         margin-top: 130px;
     }
@@ -16,14 +17,17 @@
     display: flex;
     justify-content: space-around;
     bottom: -63px;
+
     @include responsive(sm) {
         flex-direction: column;
         padding: 10px 5px;
     }
+
     @include responsive(xs) {
         left: 0;
         width: 100%;
     }
+
     @include responsive(ss) {
         text-align: center;
     }
@@ -35,13 +39,16 @@
     line-height: 33px;
     margin-top: 13px;
     font-weight: normal;
+
     @include responsive(md) {
         font-size: 15px;
     }
+
     @include responsive(sm) {
         font-size: 14px;
         margin-top: 0;
     }
+    
     @include responsive(ss) {
         font-size: 12px;
         margin: 0;

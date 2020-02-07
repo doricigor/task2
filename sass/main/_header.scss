@@ -23,7 +23,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-
 }
 
 .miniTop {
@@ -67,7 +66,6 @@
 .header__topItem {
     padding: 0 5px;
 }
-
 .header__info {
     margin-right: 35px;
 
@@ -75,7 +73,6 @@
         margin-right: 0;
     }
 }
-
 .header__phone {
     &::before {
         content: '\f879';
@@ -96,7 +93,6 @@
         margin-right: 10px;
     }
 }
-
 .header__link:visited,
 .header__link:link {
     font-size: 14px;

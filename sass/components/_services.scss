@@ -1,13 +1,16 @@
 .services {
     padding: 100px 0;
     text-align: center;
+
     @include responsive(md) {
         margin-top: 190px;
     }
+
     @include responsive(sm) {
         margin-top: 0;
         padding: 40px 0;
     }
+
     @include responsive(xs) {
         margin-top: 0;
         padding: 65px 0;
@@ -30,7 +33,7 @@
 
     @include responsive(sm) {
         padding: 20px 24px 34px 15px;
-      }
+    }
 
     @include responsive(md) {
       padding: 50px 24px 34px 15px;
@@ -45,16 +48,20 @@
         background-image: url(../img/services/services1.jpg);
         width: 259px;
         height: 200px;
+
         @include responsive(lg) {
             width: 210px;
         }
+
         @include responsive(md) {
             margin: 15px auto;
             width: 259px;
         }
+
         @include responsive(sm) {
             width: 230px;
         }
+
         @include responsive(xs) {
             width: 300px;
             background-position: center;
@@ -65,16 +72,20 @@
         background-image: url(../img/services/services2.jpg);
         width: 259px;
         height: 200px;
+
         @include responsive(lg) {
             width: 210px;
         }
+
         @include responsive(md) {
             margin: 15px auto;
             width: 259px;
         }
+
         @include responsive(sm) {
             width: 230px;
         }
+
         @include responsive(xs) {
             width: 300px;
             background-position: center;
@@ -85,16 +96,20 @@
         background-image: url(../img/services/services3.jpg);
         width: 259px;
         height: 200px;
+
         @include responsive(lg) {
             width: 210px;
         }
+
         @include responsive(md) {
             margin: 15px auto;
             width: 259px;
         }
+
         @include responsive(sm) {
             width: 230px;
         }
+
         @include responsive(xs) {
             width: 300px;
             background-position: center;
@@ -105,16 +120,20 @@
         background-image: url(../img/services/services4.jpg);
         width: 259px;
         height: 200px;
+
         @include responsive(lg) {
             width: 210px;
         }
+
         @include responsive(md) {
             margin: 15px auto;
             width: 259px;
         }
+
         @include responsive(sm) {
             width: 230px;
         }
+
         @include responsive(xs) {
             width: 300px;
             background-position: center;
@@ -128,6 +147,7 @@
     text-transform: uppercase;
     display: block;
     letter-spacing: .8px;
+    
     @include responsive(lg) {
         font-size: 15px;
     }

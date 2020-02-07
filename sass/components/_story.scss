@@ -80,14 +80,12 @@
         }
 
         @include responsive(sm) {
-            
             height: 100%;
             right: -6px;
             top: 23px;
         }
 
         @include responsive(xs) {
-            
             right: 7px;
         }
 

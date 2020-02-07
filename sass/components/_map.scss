@@ -80,10 +80,6 @@
         left: 0;
         min-width: 300px;
     }
-
-    @include responsive(ss) {
-        
-    }
 }
 .map__goldSpan {
     color: $color-gold;
@@ -141,14 +137,6 @@
        left: -80px;
        right: auto;
        bottom: -85px;
-    }
-
-    @include responsive(ss) {
-        // right: 140px;
-    }
-
-    @media only screen and (max-width: 390px) {
-        // right: 110px;
     }
 }
 .map__icons {

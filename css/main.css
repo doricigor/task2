@@ -198,6 +198,9 @@ footer {
 
 .footer__content {
   padding-top: 162px; }
+  @media only screen and (max-width: 450px) {
+    .footer__content {
+      padding-top: 105px; } }
 
 .footer__p {
   color: #888888;
@@ -1432,6 +1435,9 @@ footer {
     text-decoration: none;
     color: #ffffff;
     padding-bottom: 10px; }
+  @media only screen and (max-width: 450px) {
+    .tabs-nav li {
+      padding: 10px 15px 10px 15px; } }
 
 .tab-active {
   border-bottom: 3px solid #ffffff; }
@@ -1817,7 +1823,9 @@ footer {
   @media only screen and (max-width: 992px) {
     .contact {
       margin-top: 600px;
-      height: 800px; } }
+      height: 100%;
+      display: flex;
+      flex-direction: column; } }
   @media only screen and (max-width: 767px) {
     .contact {
       margin-top: 560px; } }
@@ -1842,6 +1850,11 @@ footer {
   top: 0;
   left: 50%;
   transform: translateX(-50%); }
+  @media only screen and (max-width: 992px) {
+    .contact__container {
+      position: relative;
+      left: auto;
+      transform: translateX(0); } }
 
 .contact__content {
   padding-top: 65px;
@@ -1876,9 +1889,13 @@ footer {
   @media only screen and (max-width: 992px) {
     .contact__info {
       padding-right: 55px; } }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 576px) {
     .contact__info {
       padding-right: 0; } }
+  @media only screen and (max-width: 450px) {
+    .contact__info {
+      flex-direction: column;
+      text-align: center; } }
 
 .contact__link, .contact__link:link, .contact__link:active, .contact__link:visited {
   font-family: 'Poppins', sans-serif;

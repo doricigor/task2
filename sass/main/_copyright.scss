@@ -8,9 +8,11 @@
     font-family: 'Poppins', sans-serif;
     padding: 23px 0;
     font-weight: 100;
+
     @include responsive(lg) {
         padding: 15px 0;
     }
+    
     @include responsive(ss) {
         font-size: 11px;
     }

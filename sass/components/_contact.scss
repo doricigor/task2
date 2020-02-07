@@ -7,7 +7,9 @@
     
     @include responsive(md) {
         margin-top: 600px;
-        height: 800px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     @include responsive(sm) {
@@ -20,7 +22,6 @@
 }
 .contact__img {
     width: 100%;
-    // height: 100%;
 
     img {
         height: 100%;
@@ -39,15 +40,23 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @include responsive(md) {
+        position: relative;
+        left: auto;
+        transform: translateX(0);
+    }
 }
 .contact__content {
     padding-top: 65px;
     padding-left: 100px;
     background-color: $color-silver-4;
     opacity: .9;
+
     @include responsive(lg) {
         padding-left: 55px;
     }
+
     @include responsive(md) {
         padding: 25px 25px 0 25px;
     }
@@ -62,6 +71,7 @@
     line-height: 30px;
     font-family: 'Merriweather', serif;
     letter-spacing: .1px;
+
     @include responsive(md) {
         font-size: 15px;
     }
@@ -71,11 +81,18 @@
     justify-content: space-between;
     
     margin-top: 33px;
+
     @include responsive(md) {
         padding-right: 55px;
     }
-    @include responsive(ss) {
+    
+    @include responsive(xs) {
         padding-right: 0;
+    }
+
+    @include responsive(ss) {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
