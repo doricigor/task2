@@ -82,7 +82,7 @@
         margin-top: 30px;
     }
 
-    @include responsive(sm) {
+    @include responsive(md) {
         text-align: center;
     }
 

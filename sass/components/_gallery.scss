@@ -18,6 +18,12 @@
     justify-content: space-around;
     margin-top: 55px;
 
+    img {
+        @include responsive(xs) {
+            width: 200px;
+        }
+    }
+
     @include responsive(md) {
         justify-content: space-evenly;
     }

@@ -386,6 +386,7 @@ footer {
   @media only screen and (max-width: 767px) {
     .btn--transparent {
       margin-top: 15px;
+      margin-bottom: 15px;
       padding: 13px 20px; } }
 
 .nav__menu {
@@ -486,17 +487,19 @@ footer {
   transform: scale(1); }
 
 .miniNav__list {
-  margin-top: 200px; }
+  margin-top: 150px; }
 
 .miniNav__item {
   list-style: none;
   padding: 25px 5px; }
+  .miniNav__item:hover {
+    background-color: #af943e; }
 
 .miniNav__link:link,
 .miniNav__link:visited {
   text-decoration: none;
   text-transform: uppercase;
-  color: #af943e;
+  color: #ffffff;
   display: inline-block;
   font-size: 22px; }
   .miniNav__link:link:hover,
@@ -1406,7 +1409,7 @@ footer {
   @media only screen and (max-width: 1200px) {
     .tabs-nav {
       margin-top: 30px; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 992px) {
     .tabs-nav {
       text-align: center; } }
   @media only screen and (max-width: 450px) {
@@ -1465,6 +1468,9 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 55px; }
+  @media only screen and (max-width: 576px) {
+    .gallery__list img {
+      width: 200px; } }
   @media only screen and (max-width: 992px) {
     .gallery__list {
       justify-content: space-evenly; } }
@@ -1493,23 +1499,25 @@ footer {
   @media only screen and (max-width: 992px) {
     .google {
       right: -10px;
-      font-size: 15px; } }
+      font-size: 15px;
+      top: 105px;
+      bottom: auto; } }
   @media only screen and (max-width: 767px) {
     .google {
       right: -20px; } }
   @media only screen and (max-width: 576px) {
     .google {
-      right: 130px;
-      font-size: 13px; } }
-  @media only screen and (max-width: 390px) {
-    .google {
-      right: 80px; } }
+      display: none; } }
 
 .map__content {
   position: relative;
   width: 100%;
   height: 100%;
   top: -474px; }
+  @media only screen and (max-width: 992px) {
+    .map__content {
+      top: auto;
+      bottom: 150px; } }
 
 .map__box {
   height: 540px;
@@ -1532,16 +1540,17 @@ footer {
       left: 0; } }
   @media only screen and (max-width: 767px) {
     .map__box {
-      height: 370px;
+      height: auto;
       width: 290px;
       padding: 20px 20px 10px 20px; } }
   @media only screen and (max-width: 576px) {
     .map__box {
+      display: block;
+      position: relative;
+      margin: 150px auto 40px auto;
       top: 45px;
-      left: 35px; } }
-  @media only screen and (max-width: 450px) {
-    .map__box {
-      left: 25px; } }
+      left: 0;
+      min-width: 300px; } }
 
 .map__goldSpan {
   color: #af943e;
@@ -1580,21 +1589,20 @@ footer {
   @media only screen and (max-width: 1200px) {
     .map__social {
       right: 69px;
-      bottom: -183px; } }
+      bottom: -171px; } }
   @media only screen and (max-width: 992px) {
     .map__social {
       width: 300px;
-      right: 60px; } }
+      right: 60px;
+      bottom: -75px; } }
   @media only screen and (max-width: 576px) {
     .map__social {
-      bottom: -247px;
-      right: 217px; } }
-  @media only screen and (max-width: 450px) {
-    .map__social {
-      right: 140px; } }
-  @media only screen and (max-width: 390px) {
-    .map__social {
-      right: 110px; } }
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      left: -80px;
+      right: auto;
+      bottom: -85px; } }
 
 .map__icons {
   font-size: 25px; }
@@ -1611,7 +1619,14 @@ footer {
   border: 1px solid transparent;
   padding: 70px 76px;
   color: #ffffff;
-  background-color: #212121; }
+  background-color: #212121;
+  transition: .2s ease; }
+  .map__icons--mail:link:hover,
+  .map__icons--mail:active:hover,
+  .map__icons--mail:visited:hover {
+    color: #212121;
+    background-color: #ffffff;
+    border: 0.5px solid #212121; }
   @media only screen and (max-width: 992px) {
     .map__icons--mail:link,
     .map__icons--mail:active,
@@ -1633,7 +1648,13 @@ footer {
   position: absolute;
   padding: 26px 33px;
   bottom: -88px;
-  left: 179px; }
+  left: 179px;
+  transition: .2s ease; }
+  .map__icons--linkedin:link:hover,
+  .map__icons--linkedin:active:hover,
+  .map__icons--linkedin:visited:hover {
+    color: #e9e9e9;
+    background-color: #212121; }
   @media only screen and (max-width: 992px) {
     .map__icons--linkedin:link,
     .map__icons--linkedin:active,
@@ -1658,7 +1679,14 @@ footer {
   border: 1px solid transparent;
   padding: 26px 32px;
   color: #ffffff;
-  background-color: #b8976a; }
+  background-color: #b8976a;
+  transition: .2s ease; }
+  .map__icons--mailxs:link:hover,
+  .map__icons--mailxs:active:hover,
+  .map__icons--mailxs:visited:hover {
+    color: #b8976a;
+    background-color: #ffffff;
+    border: 0.5px solid #212121; }
   @media only screen and (max-width: 992px) {
     .map__icons--mailxs:link,
     .map__icons--mailxs:active,
@@ -1689,7 +1717,13 @@ footer {
   position: absolute;
   padding: 27px 31px;
   top: -2px;
-  left: 179px; }
+  left: 179px;
+  transition: .2s ease; }
+  .map__icons--twitter:link:hover,
+  .map__icons--twitter:active:hover,
+  .map__icons--twitter:visited:hover {
+    color: #e9e9e9;
+    background-color: #212121; }
   @media only screen and (max-width: 992px) {
     .map__icons--twitter:link,
     .map__icons--twitter:active,
@@ -1713,7 +1747,14 @@ footer {
   border: 1px solid transparent;
   padding: 26px 36px;
   color: #ffffff;
-  background-color: #212121; }
+  background-color: #212121;
+  transition: .2s ease; }
+  .map__icons--facebook:link:hover,
+  .map__icons--facebook:active:hover,
+  .map__icons--facebook:visited:hover {
+    color: #212121;
+    background-color: #ffffff;
+    border: 0.5px solid #212121; }
   @media only screen and (max-width: 992px) {
     .map__icons--facebook:link,
     .map__icons--facebook:active,
@@ -1744,7 +1785,14 @@ footer {
   border: 1px solid transparent;
   padding: 25px 32px;
   color: #ffffff;
-  background-color: #b8976a; }
+  background-color: #b8976a;
+  transition: .2s ease; }
+  .map__icons--instagram:link:hover,
+  .map__icons--instagram:active:hover,
+  .map__icons--instagram:visited:hover {
+    color: #b8976a;
+    background-color: #ffffff;
+    border: 0.5px solid #212121; }
   @media only screen and (max-width: 992px) {
     .map__icons--instagram:link,
     .map__icons--instagram:active,
@@ -1768,11 +1816,14 @@ footer {
   overflow: hidden; }
   @media only screen and (max-width: 992px) {
     .contact {
-      margin-top: 350px;
+      margin-top: 600px;
       height: 800px; } }
   @media only screen and (max-width: 767px) {
     .contact {
-      margin-top: 230px; } }
+      margin-top: 560px; } }
+  @media only screen and (max-width: 576px) {
+    .contact {
+      margin-top: 720px; } }
 
 .contact__img {
   width: 100%; }
