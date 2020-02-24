@@ -4,6 +4,7 @@
     margin-top: 50px;
     position: relative;
 }
+
 .google {
     position: absolute;
     right: -87px;
@@ -31,6 +32,7 @@
     }
 
 }
+
 .map__content {
     position: relative;
     width: 100%;
@@ -43,6 +45,7 @@
     }
 
 }
+
 // BOX - left side
 .map__box {
     height: 540px;
@@ -81,6 +84,7 @@
         min-width: 300px;
     }
 }
+
 .map__goldSpan {
     color: $color-gold;
     font-size: 14px;
@@ -88,15 +92,21 @@
     letter-spacing: 5.5px;
     text-transform: uppercase;
 }
+
 .map__heading {
     line-height: 36px;
     margin-top: 18px;
     letter-spacing: .5px;
 
+    &::after {
+        display: none;
+    }
+
     @include responsive(sm) {
         margin-top: 7px;
     }
 }
+
 .map__list {
     list-style: none;
     line-height: 25px;
@@ -106,11 +116,13 @@
         margin-top: 10px;
     }
 }
+
 .map__item {
     color: $color-gray-2;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
+
 // BOX RIGHT - Social
 .map__social {
     height: 181px;
@@ -139,6 +151,7 @@
        bottom: -85px;
     }
 }
+
 .map__icons {
     font-size: 25px;
 
@@ -146,11 +159,12 @@
         font-size: 20px;
     }
 }
+
 .map__icons--mail:link,
 .map__icons--mail:active,
 .map__icons--mail:visited {
     position: absolute;
-    top: -2px;
+    top: -4px;
     left: 0;
     border: 1px solid transparent;
     padding: 70px 76px;
@@ -173,6 +187,7 @@
         left: 110px;
     }
 }
+
 .map__icons--linkedin:link,
 .map__icons--linkedin:active,
 .map__icons--linkedin:visited {
@@ -181,7 +196,7 @@
     border: 1px solid transparent;
     position: absolute;
     padding: 26px 33px;
-    bottom: -88px;
+    bottom: -84px;
     left: 179px;
     transition: .2s ease;
 
@@ -202,12 +217,13 @@
         left: 216px;
     }
 }
+
 .map__icons--mailxs:link,
 .map__icons--mailxs:active,
 .map__icons--mailxs:visited {
     position: absolute;
-    top: -92px;
-    right: 91px;
+    top: -94px;
+    right: 92px;
     border: 1px solid transparent;
     padding: 26px 32px;
     color: $color-white;
@@ -237,6 +253,7 @@
         right: -21px;
     }
 }
+
 .map__icons--twitter:link,
 .map__icons--twitter:active,
 .map__icons--twitter:visited {
@@ -245,7 +262,7 @@
     border: 1px solid transparent;
     position: absolute;
     padding: 27px 31px;
-    top: -2px;
+    top: -4px;
     left: 179px;
     transition: .2s ease;
 
@@ -265,11 +282,12 @@
         left: 216px;
     }
 }
+
 .map__icons--facebook:link,
 .map__icons--facebook:active,
 .map__icons--facebook:visited {
     position: absolute;
-    bottom: 2px;
+    bottom: 4px;
     right: 92px;
     border: 1px solid transparent;
     padding: 26px 36px;
@@ -300,12 +318,13 @@
         padding: 7px 19px;
     }
 }
+
 .map__icons--instagram:link,
 .map__icons--instagram:active,
 .map__icons--instagram:visited {
     position: absolute;
-    bottom: -88px;
-    right: 3px;
+    bottom: -84px;
+    right: 4px;
     border: 1px solid transparent;
     padding: 25px 32px;
     color: $color-white;

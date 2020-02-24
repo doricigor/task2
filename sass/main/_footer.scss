@@ -7,9 +7,11 @@ footer {
         height: auto;
     }
 }
+
 .footer {
     height: 100%;
 }
+
 .footer__left {
     img {
         @include responsive(md) {
@@ -25,6 +27,7 @@ footer {
         align-items: center;
     }
 }
+
 .footer__content {
     padding-top: 162px;
 
@@ -32,6 +35,7 @@ footer {
         padding-top: 105px;
     }
 }
+
 .footer__p {
     color: $color-gray-3;
     font-size: 14px;
@@ -44,6 +48,7 @@ footer {
         font-size: 13px;
     }
 }
+
 .footer__socialNetworks {
     margin-top: 30px;
     position: relative;
@@ -52,6 +57,7 @@ footer {
         margin-top: 20px;
     }
 }
+
 .circle {
         width: 35px;
         height: 35px;
@@ -71,6 +77,7 @@ footer {
             color: $color-dark-2;
         }
 }
+
 .footer__socialNetwork {
     margin-right: 25px;
 
@@ -80,6 +87,7 @@ footer {
         left: 10px;
     }
 }
+
 .footer__center {
     margin-top: 13px;
     padding-left: 110px;
@@ -96,6 +104,7 @@ footer {
         padding-left: 0;
     }
 }
+
 .footer__heading {
     font-size: 18px;
     line-height: 33px;
@@ -112,13 +121,16 @@ footer {
         }
     }
 }
+
 .footer__list {
     list-style: none;
     line-height: 36px;
 }
+
 .footer__list--2 {
     padding-left: 26px;
 }
+
 .arrow {
     &::before {
         content: "\00BB \0020";
@@ -126,11 +138,13 @@ footer {
         margin-right: 10px;
     }
 }
+
 .footer__link i {
     margin-left: -30px;
     margin-right: 13px;
     color: $color-white;
 }
+
 .footer__link:link,
 .footer__link:visited,
 .footer__link:active {
@@ -139,9 +153,11 @@ footer {
     text-decoration: none;
     margin-left: 5px;
 }
+
 .footer__link:hover {
     border-bottom: 1px solid $color-white;
 }
+
 .footer__right {
     margin-top: 13px;
     align-self: center;

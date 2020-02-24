@@ -4,15 +4,31 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    outline: none !important;
 }
+
+a,
+button {
+    &,
+    &:active,
+    &:focus,
+    &:link,
+    &:visited {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
 .container {
     @media only screen and (min-width: 1200px) {
         max-width: 1126px;
     }
 }
+
 body {
     overflow-x: hidden;
 }

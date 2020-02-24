@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 86px;
 }
+
 .clients__heading {
     line-height: 33px;
 
@@ -11,17 +12,20 @@
         margin: 20px auto 18px auto;
     }
 }
+
 .clients__subhead {
     font-size: 16px;
     color: $color-gray;
     letter-spacing: 1.3px;
 }
+
 .clients__card {
 
     @include responsive(sm) {
         padding: 20px 0;
     }
 }
+
 .clients__cards--1 {
     margin-top: 128px;
     align-items: center;
@@ -34,6 +38,7 @@
         margin-top: 50px;
     }
 }
+
 .clients__cards--2 {
     margin-top: 97px;
     align-items: center;

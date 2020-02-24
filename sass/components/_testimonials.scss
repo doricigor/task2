@@ -72,7 +72,7 @@
 }
 
 .testimonials__heading {
-    padding-bottom: 11px;
+    padding-bottom: 0;
 
     @include responsive(ss) {
         padding-bottom: 0;

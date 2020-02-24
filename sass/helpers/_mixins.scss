@@ -2,8 +2,9 @@
     content: '';
     background-color: $color-gold;
     height: 2px;
+    width: 40px;
+    margin: 20px auto;
     display: block;
-
 }
 
 @mixin bg-pos {

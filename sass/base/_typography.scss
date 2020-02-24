@@ -4,6 +4,13 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2.4px;
+
+    &::after {
+        @include gold-line;
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
 }
 .heading-2 {
     font-size: 36px;
@@ -11,6 +18,10 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
+
+    &::after {
+        @include gold-line;
+    }
 
     @include responsive(md) {
         font-size: 30px;

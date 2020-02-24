@@ -1,4 +1,3 @@
-
 .header__top {
     background-color: $color-dark;
     height: 40px;
@@ -63,9 +62,11 @@
     display: flex;
     margin-bottom: 0;
 }
+
 .header__topItem {
     padding: 0 5px;
 }
+
 .header__info {
     margin-right: 35px;
 
@@ -73,6 +74,7 @@
         margin-right: 0;
     }
 }
+
 .header__phone {
     &::before {
         content: '\f879';
@@ -83,6 +85,7 @@
         margin-right: 10px;
     }
 }
+
 .header__mail {
     &::before {
         content: '\f0e0';
@@ -93,6 +96,7 @@
         margin-right: 10px;
     }
 }
+
 .header__link:visited,
 .header__link:link {
     font-size: 14px;

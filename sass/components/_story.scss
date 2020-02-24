@@ -106,10 +106,7 @@
     }
 
     &::after {
-        @include gold-line;
-        width: 40px;
-        margin-top: 14px;
-        margin-bottom: 4px;
+        margin: 20px 0;
     }
 }
 

@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     // Banner slider
     $('.slider').slick({
@@ -20,9 +19,7 @@ $(document).ready(function () {
     $('[data-fancybox="images"]').fancybox({
     });
 
-
     // Tabs
-
     $('.tabs-nav a').on('click', function (event) {
         event.preventDefault();
         const num = $(this).attr('href');
@@ -30,6 +27,17 @@ $(document).ready(function () {
         $(this).parent().addClass('tab-active');
         $(num).slideDown().siblings().slideUp();
     });
+
+    $('.accordion').on('show.bs.collapse', function () {
+        $('.show').removeClass('show');
+      });
+
+    // $('.accordion-toggle').on('click', function(e) {
+    //     const $el = e.target;
+    //     const $title = $($el).parent().siblings();
+    //     $($title).slideDown();
+    // });
+
 });
 
 

@@ -185,6 +185,10 @@
     line-height: 48px;
     letter-spacing: 1px;
 
+    &::after {
+        display: none;
+    }
+
     @include responsive(sm) {
         padding-bottom: 0;
     }

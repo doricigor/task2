@@ -64,13 +64,6 @@
     @include responsive(ss) {
         font-size: 25px;
     }
-
-    &::after {
-        @include gold-line;
-        width: 50px;
-        margin-top: 20px;
-        margin-left: 5px;
-    }
 }
 
 .banner__p {
